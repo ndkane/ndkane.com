@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>First Lesson</title>
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+		<h1>First Lesson</h1>
+
+		<h2>One Small Step…</h2>
+
+		<p>Initially the prospect of this was quite overwhelming, with terms and applications that were incredibly new to me. My prior experience with web development had been via Tumblr, so building a website was more about hacking at bits of googled-code until something fit. This comes from having a relationship with tech that was largely learned in hideous bits, and by the way I was taught in school. I remember vividly the blue and orange harlequin background that adorned my first Geocities experiment. And no you can’t find it on WayBackMachine.</p>
+
+		<h2>What’s My Name?</h2>
+
+		<p>After registering my domain name through <a href="https://iwantmyname.com">Iwantmyname</a> and <a href="http://domai.nr">Domainr</a>, Aral demonstrated the relationships between a Domain name, Name Servers and a Storage Service through a rather nifty graph, all of which depend on each other. This, I learnt, is the internets (sort of). Excuse me if I’m terribly wrong or over simplifying it, but my understanding of establishing a website is this; A domain name is the human-friendly address of your files on a webserver, a DNS translates this human-friendly address into an IP address. Your IP address tells the server where your files are held, so that they can be sent back to the user who requested them.</p>
+
+		<p>Easy, right?</p>
+
+		<h2>Everything in its Right Place</h2>
+
+		<p>This is the area that is a bit blurry for me. I could tell you what I did, however I imagine it’s going to take me a few times before this becomes a bit more fluid. After registering my domain, identifying and registering my name servers through Route 53 on Amazon Web Services, it was down to the simple task of transfering the .html files I’d created onto the real life internet.</p>
+
+		<p>Obviously, I needed somewhere to store them, you can’t expect these files to fend for themselves, and used S3 through AWS. I needed to create a bucket which would hold my files, on S3. This was pretty simple (as simple as following the instructions available), and I am happy that my files are hanging out in Ireland of all places. I transferred these files via the rather simple Open Source app CyberDuck, which was very easy (I like things that are simple and a joy to use, have you noticed?)</p>
+
+		<p>One of the things that was most important, once I’d set all this up, was that if anyone happened upon ndkane.com, I didn’t want them to see anything that was half baked. As it stands, the main site is a shadow of what I envisage it to be, so Aral showed me how to create a local host, somewhere I could look at my progress without embarassing myself too much.</p>
+
+		<p>All of this made perfect sense once I’d configured all of the relationships in my head. Now, as I type this, it’s second nature to type <code>python -m SimpleHTTPServer</code> to access my local host, and I don’t think twice when using CyberDuck. It’s about learning those behaviours and relationships, something which Aral managed to relay to me well.</p>
+
+		<h2>HTML5 — Let’s start from the very beginning (a very good place to start).</h2>
+
+		<p>I have a very basic, and probably very wrong, knowledge of HTML, carefully refined through my early use of MySpace (Remember <a href="http://web.archive.org/web/20050206095120/http://www.strikefile.com/myspace/editor.htm">Thomas’s MySpace Editor</a>, anyone?) and later through Tumblr. When I wasn’t finding a way to crudely tile a faux-victorian background onto my Myspace profile, I was pasting .gifs left, right and centre (literally). So therefore I cleared my mind of my adolescence, and let Aral teach me from the very beginning.</p>
+
+		<p>This involved learning the basic outline of an html page, which, like a human, has a head and a body in which everything is held. Learning things like this helped me, I’m definitely a visual doer (watching, then replicating) when it comes to working, and having Aral demonstrate things side by side with my own work was much more beneficial than telling me how to do it without providing an example.</p>
+
+		<p>As mentioned earlier, my earlier experiences of HTML were messy bloodbaths, so Aral demonstrated the importance of being neat with your code, and organised, because it makes it a hell of a lot easier to <ol><li>find something</li><li>understand your own work</li><li>not drive everyone, including yourself, mad.</li></ol>So I hereby promise never to be a messy person again, at least in terms of web dev.</p>
+
+		<h2>Homework!</h2>
+
+		<p>That’s it for this post, I’ve been assigned the following as Homework - Read up on the history of HTML5, and practise! I’ve already made a huge error by not checking my tags properly, causing all of my text to be squeezed into the title tag because I missed out the second ‘t’. Cue frantic messages to Aral. Sorry Aral. You’ll be receiving plenty of those in the future.</p>
+
+		<p>Over og ud,</p>
+
+		<p>Natalie</p>
+
+		<p><a href="/">Return to the introduction.</a></p>
