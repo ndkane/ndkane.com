@@ -3,12 +3,12 @@ body
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: 1.75em;
 	max-width: 37.5em;
-	margin: 2em 2em;
+	margin: 2em 2em;	
 }
 
 li
 {
-	list-style-type: lower-alpha;
+	list-style-type: lower-alpha; 
 }
 
 ol 
