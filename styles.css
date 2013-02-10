@@ -17,12 +17,36 @@ img
 	width: 100%;	
 }
 
-li
+ol.alphabetical-list
 {
-	list-style-type: lower-alpha; 
+	list-style-type: lower-alpha;
 }
 
-ol 
+.footnote
 {
-	
+	font-size: small;
+	position: relative;
+	top: -0.25em;
+}
+
+a.footnote
+{
+	text-decoration: none;
+}
+
+.footnote-origin-link
+{
+	text-decoration: none;
+}
+
+footer
+{
+	border-top: 1px solid black;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	padding-top: 1em;
+}
+footer h1
+{
+	font-size: 1.5em;
 }
