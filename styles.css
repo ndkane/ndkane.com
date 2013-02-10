@@ -6,6 +6,17 @@ body
 	margin: 2em 2em;	
 }
 
+p
+{
+	text-align: justify;
+}
+
+img
+{
+	max-width: 37.5em;
+	width: 100%;	
+}
+
 li
 {
 	list-style-type: lower-alpha; 
