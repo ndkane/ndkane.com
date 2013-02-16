@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>INSERT</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../styles.css">
+		<meta name='viewport' content='width=device-width'>
+	</head>
+
+	<body>
+		
+		<h1>Fixing Things, Learning Some Class and Getting Mobile</h1>
+		
+		<!-- Image Credit: Still from Metropolis by Fritz Lang, 1927 -->
+		<img src="images/metropolis.jpg">
+
+		<h2>Images</h2>
+
+		<p>As mentioned in my previous lesson, there were a few things that needed fixing, and a few questions that needed answering. My website was taking on a life of its own, and I had to make sure that it was going to behave how I wanted it to, unlike Fritz Lang’s robot double in the 1927 film <a href="http://en.wikipedia.org/wiki/Metropolis_(film)" title="Link to Metropolis on Wikipedia.">‘Metropolis’</a>(pictured above). Here’s hoping it will be a force for good.</p> 
+
+		<p>The first issue concerned the image that I included in the post — How to host images myself so that I didn’t have to hotlink (which is naughty, as it steals bandwidth!), how to credit images properly, and how to make it the right size.</p>
+
+		<p>Hosting an image was simple, and made sense once the connection had been made. It was as simple as creating an Images folder in the folder where that page was kept, and linking it using the img src code back to the location in the root directory. As the image was from Flickr (with a Creative Commons license, I do aim to be good...) I wanted to make sure that credit was given. Aral gave me a very handy, very easy tip to remembering the location of an image on the internets using the comments tag within the code — (INSERT TAG). This is not only very helpful to a forgetful being like myself, but also shows consideration from the web developer/designer; It shows a degree of care about your source, and gives credit where credit is due! I also saved the file with the creators name attached, and added a title to the tag for extra measure.</p>
+
+		<p>When I first placed the image, it was definitely a case of guesswork on what width I should use. Guessing the width at 550px, I added the width attribute into the img tag. This worked initially, but as Aral pointed out, what happens when the page is resized? Aside from the text not responding to the width of the window, the image was just cut off. Aral asked me what size my image should be at all times in context to the window size. My instinct was to guess the total size of the image, then just guess the proportionate size, for example, a slightly smaller window would be at 75%. I was promptly told off for this… The image should be at 100% at all times, so therefore within the css, we set the max-width of the image to 37.5 ems, the max-width of the text, and the width at a permanant 100%, so wherever the image was moved to, it would stay the same. Problem solved, and no-one was beheaded.</p>
+
+		<h2>Taking things mobile</h2>
+
+		<p>If you’d tried to look at ndkane.com on a mobile, you would have been confronted with tiny little writing that no-one could read. After installing XCode, a handy free developer app that comes with an iOS simulator, Aral told me about viewports. 
+		We added the content attribute ‘width=device-width’ to the head, after the viewport meta tag, which tells the code to fit to the width of the device. Simple, it’s wonderful what asking nicely will do for you. Now my friends with Android and Windows phones will have to endure a brief takeover every now and again as I test my fledgling website on them. Sorry in advance.</p>
+
+		<h2>Staying Classy</h2>
+
+		<p>In last week’s post I identified a few questions that I wanted to ask Aral concerning the formatting of the post. How did I make it so that one rule I laid out in the style sheet did not apply to everything, such as my problem with lists where I didn’t want all lists to have an alphabetical value? This was all solved by understanding class attributes. I’ll be honest, at first I didn’t fully grasp what an attribute was, so after some very helpful repetition (including ‘Create PinkElephant class’) from Aral I finally got it. In the case of bullet points, it is a case of making a particular rule, rather than an exception to one which was my first instinct.</p>
+
+		<p>Within the ‘ol’ element in the stylesheet, I created the class ‘alphabetical-list’. By keeping it within this element, with ‘.’ to indicate a class, this rule only applies to this class when identified within an ordered list. This applies across the board to all elements and class attributes. Therefore if you only wanted a certain font when selected, rather than applying it to the whole code, you would be able to create a class for this tag, and then identify it as a class attribute.</p>
+
+		<h2>Footnotes: A little padding never hurts</h2>
+
+		<p>
+
+		<h2>A quick note on relativity</h2>
+
+		<p>When I have been writing these blog posts, often I find myself falling into the inevitable trap of presentation, rather than semantics. This is what happens when you’re used to writing a certain way at school, and therefore eliminate any other way of writing anything in text. Aral pointed out the importance of marking up for semantics, not presentation in web design and development, as that’s what code is for, and the style sheet. I have already made the mistake of thinking that ‘h1’, ‘h2’ etc. are smaller and bigger versions of a heading, rather than relative tags.</p>
+
+		<h2>Other matters of great importance</h2>
+
+		<p>I’ve made my text justified, so that it reads slightly better, Aral also showed me the super useful hyphens tag to insert into the stylesheet within the ‘p’ tag, which stops rivers in the text appearing as it all stretches to fit in.</p>
+
+		<p>Also, I hope you like my shiny new navigation page. Nothing says frustration like having to click ‘next’ five or so times just to get to the page you want.</p>
+
+	</body>
+
+</html>
