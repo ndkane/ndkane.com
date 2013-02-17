@@ -1,6 +1,16 @@
 body 
 {
 	line-height: 24px;
+	/*background-image: url("/images/24px-grid.gif");*/
+	max-width: 600px;
+	margin: 24px 48px 48px 48px;
+}
+
+img
+{
+	width: 100%;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 h1
@@ -14,10 +24,71 @@ h2
 {
 	font-size: 24px;
 	line-height: 32px;
-	margin-bottom: 4px;
+	margin-bottom: 8px;
+	margin-top: 8px;
 }
 
 h3
 {
 	font-size: 16px;
+}
+
+p 
+{
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+/* Specific styles */
+
+ol.alphabetical-list
+{
+	list-style-type: lower-alpha;
+}
+
+.footnote
+{
+	font-size: small;
+	position: relative;
+	top: -4px;
+}
+
+a.footnote
+{
+	text-decoration: none;
+}
+
+.footnote-origin-link
+{
+	text-decoration: none;
+}
+
+footer
+{
+	border-top: 1px solid black;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	padding-top: 16px;
+}
+footer h1
+{
+	font-size: 24px;
+}
+
+figure
+
+{
+	font-size: smaller;
+	margin-bottom: 12px;
+	margin-top: 12px;
+
+}
+
+figure img
+{
+	margin-bottom: 0;
 }
