@@ -4,6 +4,7 @@ body
 	/*background-image: url("/images/24px-grid.gif");*/
 	max-width: 600px;
 	margin: 24px 48px 48px 48px;
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
 }
 
 img
@@ -48,6 +49,12 @@ p
 ol.alphabetical-list
 {
 	list-style-type: lower-alpha;
+}
+
+ol
+{
+	list-style-type: decimal;
+	margin-left: 48px;
 }
 
 .footnote
