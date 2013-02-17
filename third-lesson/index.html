@@ -3,7 +3,9 @@
 	<head>
 		<title>Fixing Things, Learning some Class, and Getting Mobile</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/styles-vertical-rhythm.css">
+		<!-- <link rel="stylesheet" href="/styles.css"> -->
 		<meta name='viewport' content='width=device-width'>
 	</head>
 
@@ -16,7 +18,7 @@
 
 		<h2>Images</h2>
 
-		<p>As mentioned in my previous lesson, there were a few things that needed fixing, and a few questions that needed answering. My website was taking on a life of its own, and I had to make sure that it was going to behave how I wanted it to, unlike Fritz Lang’s robot double in the 1927 film <a href="http://en.wikipedia.org/wiki/Metropolis_(film)" title="Link to Metropolis on Wikipedia.">‘Metropolis’</a> (pictured above). Here’s hoping it will be a force for good.</p> 
+		<p>As mentioned in my previous lesson, there were a few things that needed fixing, and a few questions that needed answering. My website was taking on a life of its own, and I had to make sure that it was going to behave how I wanted it to, unlike Fritz Lang’s robot double in the 1927 film <a href="http://en.wikipedia.org/wiki/Metropolis_(film)" title="Link to Metropolis on Wikipedia.">‘Metropolis’</a> (pictured above). Here’s hoping it will be a force for good.</p>
 
 		<p>The first issue concerned the image that I included in the post — How to host images myself so that I didn’t have to hotlink (which is naughty, as it steals bandwidth!), how to credit images properly, and how to make it the right size.</p>
 
@@ -41,7 +43,7 @@
 
 		<p>Another thing about my footnotes was the presentation of the in—text references. Like my problem with ordered lists, I noticed that I wanted to create another rule for this. The first rule was that I didn’t want the superscript (teeny) ‘1’ to be underlined. Therefore, I created another class specific to the ‘a’ tag and titled it ‘footnote’ and indicated that I wanted zero text decoration. This means that when I want this I can apply it when creating a link to ensure it isn’t underlined.</p>
 
-		<p>I also had to create a class for the tiny ‘1’ that indicated a footnote. I first used the unicode symbol for this, however it only seemed to work for certain numbers, and therefore wasn’t very useful if I wanted to use other numbers instead! Aral showed me to make a class that indicated a smaller script. It had to be smaller, and its position relative to the text size, and in order for it to be smaller than the text I had to give a minus em value. Just in case that doesn't mmake sense, here’s the code in the stylesheet:
+		<p>I also had to create a class for the tiny ‘1’ that indicated a footnote. I first used the html entity for this, however it only seemed to work for certain numbers, and therefore wasn’t very useful if I wanted to use other numbers instead! Aral showed me to make a class that indicated a smaller script. It had to be smaller, and its position relative to the text size, and in order for it to be smaller than the text I had to give a minus em value. Just in case that doesn't mmake sense, here’s the code in the stylesheet:
 
 		<figure> <img src="images/footnote-class-screenshot.png" alt="Screenshot of Footnotes code within CC Stylesheet"> <figcaption>Footnote class indicating a small, relative number to use within text.</figcaption> </figure>
 

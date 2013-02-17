@@ -1,9 +1,9 @@
 body
 {
 	font-family: Helvetica, Arial, sans-serif;
-	line-height: 1.75em;
-	max-width: 37.5em;
-	margin: 2em 2em;	
+	line-height: 32px;
+	max-width: 600px;
+	margin: 32px 32px;	
 }
 
 p
@@ -16,7 +16,7 @@ p
 
 img
 {
-	max-width: 37.5em;
+	max-width: 600px;
 	width: 100%;	
 }
 
@@ -29,7 +29,7 @@ ol.alphabetical-list
 {
 	font-size: small;
 	position: relative;
-	top: -0.25em;
+	top: -4px;
 }
 
 a.footnote
@@ -45,13 +45,13 @@ a.footnote
 footer
 {
 	border-top: 1px solid black;
-	margin-top: 3em;
-	margin-bottom: 3em;
-	padding-top: 1em;
+	margin-top: 48px;
+	margin-bottom: 48px;
+	padding-top: 16px;
 }
 footer h1
 {
-	font-size: 1.5em;
+	font-size: 24px;
 }
 
 figure
