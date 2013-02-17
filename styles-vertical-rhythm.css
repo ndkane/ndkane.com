@@ -65,10 +65,20 @@ ol
 	top: -4px;
 }
 
+a
+{
+	text-decoration: none;
+
+}
+
 a.footnote
 {
 	text-decoration: none;
+
 }
+
+a:link {color:#FFCC00;}      /* unvisited link */
+a:visited {color:#DF3A01;}  /* visited link */
 
 .footnote-origin-link
 {
