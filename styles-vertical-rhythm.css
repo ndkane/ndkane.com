@@ -58,6 +58,20 @@ ol
 	margin-left: 48px;
 }
 
+ul
+{
+	list-style-type: square;
+	margin-right: 48px;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
+li 
+{
+	margin; 12px;
+	paddng: 12px ;
+}
+
 .footnote
 {
 	font-size: small;
@@ -77,8 +91,16 @@ a.footnote
 
 }
 
-a:link {color:#FFCC00;}      /* unvisited link */
-a:visited {color:#DF3A01;}  /* visited link */
+a:link 
+{
+	color:#FFCC00;
+}		/* unvisited link */
+
+a:visited 
+
+{	
+	color:#DF3A01;
+}  		/* visited link */
 
 .footnote-origin-link
 {
@@ -104,10 +126,53 @@ figure
 	font-size: smaller;
 	margin-bottom: 12px;
 	margin-top: 12px;
+	text-align: center;
 
 }
 
 figure img
 {
 	margin-bottom: 0;
+}
+
+td
+{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	margin-left: 24px;
+	margin-right: 24px
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 24px;
+	padding-right: 24px;
+	background-color: #CDCDCD
+}
+
+
+td.crapgrid
+{
+	margin; 0;
+	padding: 0;
+	background-color: #CDCDCD
+}
+
+tr
+{
+	margin-top: 8px
+	margin-bottom: 8px;
+	margin-left: 24px;
+	margin-right: 24px
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 24px;
+	padding-right: 24px;
+	background-color: #CDCDCD
+}
+
+
+tr.crapgrid
+{
+	margin; 0;
+	padding: 0;
+	background-color: #CDCDCD
 }

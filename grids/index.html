@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Grids</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/styles-vertical-rhythm.css">
+		<!-- <link rel="stylesheet" href="/styles.css"> -->
+		<link rel="stylesheet" href="styles.css">
+		<meta name='viewport' content='width=device-width'>
+	</head>
+
+	<body>
+	<h1>Grids, Resetting the CSS, and a Few Escaped Entities…</h1>
+
+	<!-- Image Credit: Still from William Friedkin’s 1973 film ‘The Exorcist’-->
+	<img src="images/black-and-white-exorcist.jpg" id="crap-grid">
+
+	<h2>Escaping Entities</h2>
+
+	<p>Therefore I learnt about escaping the code with HTML entities. I’d already used one without knowing it when I first </p>
+
+	<h2>Resetting the CSS</h2>
+
+	<p></p>
+
+	<h2>A Brief Intermission</h2>
+
+	<p>Before I go any further and explain what is meant by a grid, I’d like to draw your attention to this monstrosity:</p>
+
+		<table>
+	<tbody>
+		<tr class="crapgrid">
+			<td class="crapgrid">h1</td>
+			<td class="crapgrid">36px</td>
+		</tr>
+		<tr class="crapgrid">
+			<td class="crapgrid">h2</td>
+			<td class="crapgrid">24px</td>
+		</tr>
+		<tr class="crapgrid">
+			<td class="crapgrid">h3</td>
+			<td class="crapgrid">16px</td>
+		</tr>
+	</tbody>
+	</table>
+	<p>I attempted to teach myself how to create a table so that I could demonstrate vertical rhythm, however, as you can see, it didn’t quite work. I wanted to create a nicely spaced table with background colour that also had spaces between the cells. I have tried the following:</p>
+	<p><ul><li>Realising that because I reset the CSS the default settings won't apply, therefore explaining why it isn’t quite formatting properly</li><li>Adding padding and margins into the table element, however that didn’t work for reasons I don’t quite understand.</li><li>Asking Stackoverflow and the Internets, but I don’t think I'm asking the right question perhaps.</li></ul></p>
+
+	<p>After asking Aral, I realised that I was looking at the wrong elements altogether. Rather than trying to change the properties of the &lt;table&gt; element, I should have been looking at the elements that control the rows and cells of a table — the &lt;td&gt; and &lt;tr&gt; tags. It was there that I sorted out the margins and padding, which was the problem all along. There’s still an issue with the top margin/padding, but I reckon that might have to do with the padding on &lt;p&gt;!</p>
+
+	<h2>Grids</h2>
+
+	<p>Define base line height, then make all divisible</p>
+
+		<table>
+	<tbody>
+		<tr>
+			<td>h1</td>
+			<td>36px</td>
+		</tr>
+		<tr>
+			<td>h2</td>
+			<td>24px</td>
+		</tr>
+		<tr>
+			<td>h3</td>
+			<td>16px</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h2>Homework</h2>
+
+	<p><ol><li>Consider Headers and navigation, by looking at &lt;header&gt; and &lt;nav&gt;.</li><li>Fix the code so that the new style sheet applies to all</li><li>Fix the table as mentioned earlier.</li></ol></p>
+
+	<h2>Questions</h2>
+
+	<p><ol><li>How to create distance between list items in ordered and unordered lists — tried to rectify it through padding but it didn’t work!</li></ol></p>
+
+	</body>
+	
+</html>
