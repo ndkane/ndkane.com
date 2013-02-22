@@ -14,15 +14,23 @@
 	<h1>Grids, Resetting the CSS, and a Few Escaped Entities…</h1>
 
 	<!-- Image Credit: Still from William Friedkin’s 1973 film ‘The Exorcist’-->
-	<img src="images/black-and-white-exorcist.jpg" id="crap-grid">
+	<img src="images/black-and-white-exorcist.jpg">
 
 	<h2>Escaping Entities</h2>
 
-	<p>Therefore I learnt about escaping the code with HTML entities. I’d already used one without knowing it when I first </p>
+	<p>In the previous posts, I had come up with a small issue concerning the presentation of elements without actioning them. This led to many annoying mistakess when I tried to demonstrate what I had used in the stylesheet or HTML.</p>
+
+	<p>Therefore I learnt about escaping the code with HTML entities. I’d already used one without knowing it when I first attempted footnotes. I used the character entity ‘&amp;sup1;’ before I knew how to change it in the stylesheet. Knowing about character entities, which escape the code, allowed me to fix it. Problem solved. We found a handy site by w3.org which has a big database of <a href="http://dev.w3.org/html5/html-author/charref" title="Character Entity Reference Chart">character entities</a>, which I’ve found very helpful since.</p>
 
 	<h2>Resetting the CSS</h2>
 
-	<p></p>
+	<p>From the beginning of this project, we had been using a style sheet that was essentially working around a set of defaults. I didn’t have the freedom that I’d like, however Aral showed that there is a way to maintain complete control of my code. In order to dothis, we needed to reset the CSS.</p>
+
+	<p>Essentially, the goal of a reset stylesheet is to reduce browser inconsistencies. These can be anything from default base line heights, to margins and headings. Therefore we used Eric Meyer’s CSS Reset <a href="http://meyerweb.com/eric/tools/css/reset/" title="Eric Meyer’s CSS Reset V.2.0">Version 2.0</a> and placed it within the &lt;head&gt; before any of the other stylesheets present, as this would be the first stylesheet the code would apply. However, our original stylesheet was still in use, so we muted it by placing it into a comment.</p>
+
+	<p>This reset made my website a shadow of its former self. However, it allowed to to do everything from scratch, rather than have to make things work for me. As an artist, I create things from base elements, not just by hacking at someone else’s work in order to fit around their restrictions. Therefore we created the stylesheet "styles—vertical—rhythms.css" where I would place the specific styles I had created in the original CSS. I could then go on to create my grids, and create instructions as I go along. This was placed in the &lt;head&gt; after the CSS reset, as any stylesheets placed later in the order override any before them.</p>
+
+	<p>For a brief history of CSS Resets that I found rather interesting, take a glance at Michael Tuck’s post on <a href="http://sixrevisions.com/css/the-history-of-css-resets/" title="The History of CSS Resets by Michael Tuck">Six Revisions</a>.
 
 	<h2>A Brief Intermission</h2>
 
@@ -45,13 +53,17 @@
 	</tbody>
 	</table>
 	<p>I attempted to teach myself how to create a table so that I could demonstrate vertical rhythm, however, as you can see, it didn’t quite work. I wanted to create a nicely spaced table with background colour that also had spaces between the cells. I have tried the following:</p>
-	<p><ul><li>Realising that because I reset the CSS the default settings won't apply, therefore explaining why it isn’t quite formatting properly</li><li>Adding padding and margins into the table element, however that didn’t work for reasons I don’t quite understand.</li><li>Asking Stackoverflow and the Internets, but I don’t think I'm asking the right question perhaps.</li></ul></p>
+	<p><ul><li>Realising that because I reset the CSS the default settings won’t apply, therefore explaining why it isn’t quite formatting properly</li><li>Adding padding and margins into the table element, however that didn’t work for reasons I don’t quite understand.</li><li>Asking Stackoverflow and the Internets, but I don’t think I’m asking the right question perhaps.</li></ul></p>
 
 	<p>After asking Aral, I realised that I was looking at the wrong elements altogether. Rather than trying to change the properties of the &lt;table&gt; element, I should have been looking at the elements that control the rows and cells of a table — the &lt;td&gt; and &lt;tr&gt; tags. It was there that I sorted out the margins and padding, which was the problem all along. There’s still an issue with the top margin/padding, but I reckon that might have to do with the padding on &lt;p&gt;!</p>
 
 	<h2>Grids</h2>
 
-	<p>Define base line height, then make all divisible</p>
+	<p>As mentioned earlier, I had reset the CSS so that I could work from a blank canvas. This meant that I had to define a few values in terms of headings and line height. 
+
+	This was relatively simple. I just had to define a base line height, which was set at 24px, and then make all values divisible by 24. This lets the page read better. I defined the line height in the CSS under ‘body’, and then went to work ensuring my margins, padding and so on were divisible. Aral helped me to check that it fit by using a 24px grid background image, which I can easily mute when I don’t need it.</p>
+
+	<p>As an example, this is the grid I used for my headings. With the font size set at 16px, this grid allows for proportional distinction from the paragraph text. As you might notice, h3 is set at 16px, however, I’ll be setting it to bold instead of changing the size.</p>
 
 		<table>
 	<tbody>
@@ -70,13 +82,23 @@
 	</tbody>
 	</table>
 
+	<p>This makes me happy. I like that I don’t have to guess margins and paddings to see if they work, I have a basic grid that helps me to determine them. Secretly I’m happy that the line height is also the day of the month I was born on. The month itself is divisible by it too.</p>
+
 	<h2>Homework</h2>
 
-	<p><ol><li>Consider Headers and navigation, by looking at &lt;header&gt; and &lt;nav&gt;.</li><li>Fix the code so that the new style sheet applies to all</li><li>Fix the table as mentioned earlier.</li></ol></p>
+	<p><ol><li>Consider Headers and navigation, by looking at &lt;header&gt; and &lt;nav&gt;.</li><li>Fix the code so that the new style sheet applies to all</li></ol></p>
 
 	<h2>Questions</h2>
 
-	<p><ol><li>How to create distance between list items in ordered and unordered lists — tried to rectify it through padding but it didn’t work!</li></ol></p>
+	<p><ol><li>How to create distance between list items in ordered and unordered lists — tried to rectify it through padding but it didn’t work!</li><li>How to Sort out the padding on tables!</li><li>How to change the appearance of my mobile site. The text doesn’t quite fit properly as there are huge borders.</ol></p>
+
+	<p>As I write this post, Aral is speaking at <a href="http://phpconference.co.uk/speakers" title="PHP UK Conference 2013 - Speakers">PHP UK Conference</a> in London, and will be talking about something he has been creating that is very exciting!</p>
+
+	<p>Oh, and bare rolig, Jeg er stadig at lære dansk! Lige meget langsomt nu…</p>
+
+	<p>Natalie</p>
+	
+	<p><a href="/">Return to the introduction.</a></p>
 
 	</body>
 	
