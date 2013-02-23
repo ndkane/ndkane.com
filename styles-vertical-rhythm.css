@@ -45,6 +45,12 @@ p
 	margin-top: 12px;
 }
 
+p.smaller
+
+{
+	font-size: smaller;
+}
+
 /* Specific styles */
 
 ol.alphabetical-list
