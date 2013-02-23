@@ -176,3 +176,9 @@ tr.crapgrid
 	padding: 0;
 	background-color: #CDCDCD
 }
+
+blockquote
+{
+	margin-left: 24px;
+	margin-right: 24px;
+}
