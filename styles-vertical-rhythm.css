@@ -3,8 +3,55 @@ body
 	line-height: 24px;
 	/*background-image: url("/images/24px-grid.gif");*/
 	max-width: 600px;
-	margin: 24px 48px 48px 48px;
+	margin: 72px 48px 48px 48px;
 	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+
+header
+{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 6px;
+	font-family: Helvetica;
+}
+
+header h1
+{
+	font-size: 16px;
+	display: inline;
+	margin-bottom: 0;
+	padding: 0;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+header li.current
+{
+	border-bottom: 1px solid black;
+}
+
+header h1 a:link, header h1 a:visited
+{
+	color: grey;
+}
+
+header ul, header li
+{
+	display: inline;
+}
+
+header li
+{
+	margin-left: 24px;
+
+
+}
+
+header li:first-child
+{
+	margin-left: 96px;
 }
 
 img
@@ -76,6 +123,7 @@ li
 	margin: 12px 0;
 	paddng: 12px;
 }
+
 
 .footnote
 {
@@ -185,6 +233,11 @@ tr.crapgrid
 
 blockquote
 {
-	margin-left: 24px;
-	margin-right: 24px;
+	margin-left: 48px;
+	margin-right: 48px;
+}
+
+time
+{
+	font-size: 8px;
 }
