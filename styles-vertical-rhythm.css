@@ -3,18 +3,19 @@ body
 	line-height: 24px;
 	/*background-image: url("/images/24px-grid.gif");*/
 	max-width: 600px;
-	margin: 72px 48px 48px 48px;
+	margin: 112px 48px 48px 120px;
 	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+	background-image:url(/images/page-logo.jpg);
+	background-size: 120px 180px;
+	background-repeat:no-repeat;
 }
 
 header
 {
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 6px;
-	font-family: Helvetica;
+	margin-left: 0px;
+	margin-bottom: 36px;
+	font-family: helvetica;
+	position: relative;
 }
 
 header h1
@@ -23,18 +24,17 @@ header h1
 	display: inline;
 	margin-bottom: 0;
 	padding: 0;
-	line-height: 16px;
-	text-transform: uppercase;
+	line-height: 24px;
 }
 
 header li.current
 {
-	border-bottom: 1px solid black;
+	text-decoration: underline;
 }
 
 header h1 a:link, header h1 a:visited
 {
-	color: grey;
+	color: #497789;
 }
 
 header ul, header li
@@ -44,14 +44,12 @@ header ul, header li
 
 header li
 {
-	margin-left: 24px;
-
-
+	margin-left: 18px;
 }
 
 header li:first-child
 {
-	margin-left: 96px;
+	margin-left: 348px;
 }
 
 img
@@ -146,13 +144,13 @@ a.footnote
 
 a:link 
 {
-	color:#FFCC00;
+	color:#497789;
 }		/* unvisited link */
 
 a:visited 
 
 {	
-	color:#DF3A01;
+	color:#497789;
 }  		/* visited link */
 
 .footnote-origin-link
@@ -239,5 +237,5 @@ blockquote
 
 time
 {
-	font-size: 8px;
+	font-size: 12px;
 }
