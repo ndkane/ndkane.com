@@ -171,6 +171,14 @@ footer h1
 	font-size: 24px;
 }
 
+footnote
+{
+	position: absolute;
+	padding-top: 24px;
+	padding-bottom: 8px;
+	font-size: 12px;
+}
+
 figure
 
 {
