@@ -74,10 +74,17 @@ h2
 	margin-top: 8px;
 }
 
+h2.underline
+
+{
+	text-decoration: underline;
+}
+
 
 h3
 {
 	font-size: 16px;
+	font-variant: bold;
 }
 
 p 
@@ -246,4 +253,9 @@ blockquote
 time
 {
 	font-size: 12px;
+}
+
+img.no-bottom-margin
+{
+	margin-bottom: 0;
 }
