@@ -116,6 +116,11 @@ ol
 	margin-left: 48px;
 }
 
+ol.index-list-margin
+{
+	margin-bottom: 18px;
+}
+
 ul
 {
 	list-style-type: square;
@@ -253,9 +258,4 @@ blockquote
 time
 {
 	font-size: 12px;
-}
-
-img.no-bottom-margin
-{
-	margin-bottom: 0;
 }
