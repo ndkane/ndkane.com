@@ -46,16 +46,16 @@ h2
 
 h3
 {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 24px;
-	margin-top: 12px;
-	margin-bottom: 12px;
-	text-style: bold;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	text-transform: none;
 }
 
 h4
 {
-	font-size: 16px
+	font-size: 18px
 	margin-top: 12px;
 	margin-bottom: 12px;
 }
@@ -69,4 +69,12 @@ ul
 li
 {
 	line-height: 30px;
+}
+
+a.ndkane
+{
+	font-family: Helvetica;
+	font-size: 16px;
+	color: orange;
+	text-align: right;
 }
