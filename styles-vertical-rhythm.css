@@ -1,21 +1,26 @@
 body 
 {
 	line-height: 24px;
-	/*background-image: url("/images/24px-grid.gif");*/
-	max-width: 600px;
-	margin: 112px 48px 48px 120px;
+/*	background-image: url("/images/24px-grid.gif");
+*/	max-width: 600px;
+	margin: 108px 24px 48px 24px;
 	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
-	background-image:url(/images/page-logo.jpg);
-	background-size: 120px 180px;
-	background-repeat:no-repeat;
 }
 
 header
 {
 	margin-left: 0px;
 	margin-bottom: 36px;
-	font-family: helvetica;
-	position: relative;
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+	position: relative; 
+}
+
+header img
+{
+	position: absolute;
+	width: 60px;
+	height: 113px;
+	top: -140px;
 }
 
 header h1
@@ -46,10 +51,18 @@ header li
 {
 	margin-left: 18px;
 }
-
+/*
 header li:first-child
 {
 	margin-left: 348px;
+}*/
+
+nav
+{
+	position: absolute !important;
+	top: -62px;
+	right: 0px;	
+
 }
 
 img
@@ -61,15 +74,15 @@ img
 
 h1
 {
-	font-size: 36px;
-	line-height: 48px;
+	font-size: 30px;
+	line-height: 42px;
 	margin-bottom: 12px;
 }
 
 h2
 {
 	font-size: 24px;
-	line-height: 32px;
+	line-height: 28px;
 	margin-bottom: 8px;
 	margin-top: 8px;
 }
@@ -131,9 +144,12 @@ ul
 li 
 {
 	margin: 12px 0;
-	paddng: 12px;
 }
 
+ul.redesign-versions
+{
+	padding-left: 24px;
+}
 
 .footnote
 {
@@ -251,11 +267,69 @@ tr.crapgrid
 
 blockquote
 {
-	margin-left: 48px;
-	margin-right: 48px;
+	margin-left: 24px;
+	margin-right: 24px;
+	border-left: solid lightgrey 2px;
+	padding-left: 12px;
 }
 
 time
 {
 	font-size: 12px;
 }
+
+@media all and (min-width: 768px)
+{
+	body 
+	{
+		margin-left: 144px;
+		margin-top: 196px;
+		margin-right: 48px;
+	}
+
+	header img
+	{
+		left: -120px;
+		width: 96px;
+		height: 210px;
+		top: -222px;
+	}
+		
+	h1
+	
+	{
+		font-size: 36px;
+		line-height: 48px;
+		margin-bottom: 12px;
+	}
+
+	h2
+	{
+		font-size: 24px;
+		line-height: 32px;
+		margin-bottom: 8px;
+		margin-top: 8px;
+	}
+
+	h2.underline
+
+	{
+		text-decoration: underline;
+	}
+
+
+	h3
+	{
+		font-size: 16px;
+		font-variant: bold;
+	}
+
+	blockquote
+	{
+		margin-left: 48px;
+		margin-right: 48px;
+		border-left: solid lightgrey 2px;
+		padding-left: 12px;
+	}
+
+	}
