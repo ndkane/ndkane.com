@@ -278,6 +278,11 @@ time
 	font-size: 12px;
 }
 
+code
+{
+	font-family: Courier;
+}
+
 @media all and (min-width: 768px)
 {
 	body 
