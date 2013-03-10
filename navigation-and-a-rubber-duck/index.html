@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="/reset.css">
 		<link rel="stylesheet" href="/styles-vertical-rhythm.css">
 		<!-- <link rel="stylesheet" href="/styles.css"> -->
+		<link rel="stylesheet" href="/prism.css ">
 		<meta name='viewport' content='width=device-width'>
 	</head>
 
@@ -41,22 +42,20 @@
 
 		<p>Here’s the code as it appears in my stylesheet:</p>
 		
-		<blockquote>
-			<code>
-				<p>tr</p>
-				<p>{</p>
-				<p>background-color: #cdcdcd</p>
-				<p>}</p>
-				<p>tr: nth-child (2n)</p>
-				<p>{</p>
-				<p>background-color: darkgrey;</p>
-				<p>}</p>
-				<p>tr:not(:last-child)</p>
-				<p>{</p>
-				<p>border-bottom: 1px solid darkgrey;</p>
-				<p>}</p>
-			</code>
-		</blockquote>
+		<pre><code class="language-css">tr
+{
+  background-color: #CDCDCD;
+}
+
+tr:nth-child(2n)
+{
+  background-color: darkgrey;
+}
+
+tr:not(:last-child)
+{
+  border-bottom: 1px solid darkgrey;
+}</code></pre>
 
 		<p>Here you can see that we set the table rows to be #cdcdcd, and then set a pseudo-class later in the order for every other (starting at the second) cell to be a darker grey. You can also set it differently, so that rather than setting a ‘base’ color and then using a pseudo-class to override it, the initial selector would be a pseudo-class, instead defining the nth child as 0n, from the first cell, then every other. However, it makes sense to do it the way that we’ve set it, as it’s simple to order in the CSS.</p>
 
@@ -97,10 +96,7 @@
 			<p>Copyright © 2013 Natalie D. Kane</p>
 		</footnote>
 
-
-
-		
-
+		<script src="/js/prism.js"></script>
 
 
 	</body>

@@ -280,7 +280,7 @@ time
 
 code
 {
-	font-family: Courier;
+	tab-size: 2;
 }
 
 @media all and (min-width: 768px)
