@@ -284,6 +284,11 @@ code
 	tab-size: 2;
 }
 
+code
+{
+	font-family: Courier;
+}
+
 @media all and (min-width: 768px)
 {
 	body 
