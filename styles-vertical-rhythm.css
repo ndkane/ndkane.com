@@ -278,7 +278,8 @@ time
 	font-size: 12px;
 }
 
-code
+/*Tab-size */
+code 
 {
 	tab-size: 2;
 }
