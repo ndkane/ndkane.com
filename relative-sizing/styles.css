@@ -2,6 +2,101 @@ body
 {
 	line-height: 24px;
 	max-width: 750px;
+	margin: 24px 6px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+nav
+{
+	padding-bottom: 18px;
+	border-bottom: solid 1px black;
+	margin-bottom: 36px;
+	text-align: center;
+
+}
+
+a
+{
+	text-decoration: none;
+}
+
+nav a
+{
+	text-decoration: none;
+	font-size: 16px;
+	color: orange;
+}
+
+li 
+{
+	display: inline-block;
+	margin-left: 18px;
+	line-height: 30px;
+}
+
+li:first-child
+{
+	margin-left: 0;
+}
+
+/*li:after
+{
+	content: "-"
+}
+
+li:last-child:after
+{
+	content: "";
+}*/
+
+img
+{
+	width: 100%;
+	margin: 12px 0;
+}
+
+h1, h2, h3
+{
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+
+h1
+{
+	font-size: 42px;
+	line-height: 60px;
+}
+
+h2
+{
+	font-size: 30px;
+	line-height: 24px;
+}
+
+h3
+{
+	font-size: 24px;
+	line-height: 24px;
+}
+
+p
+{
+	font-size: 16px;
+	line-height: 30px;
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	margin-bottom: 16px;
+}
+
+@media all and (min-width: 768px)
+{
+
+body 
+{
+	line-height: 24px;
+	max-width: 750px;
 	margin: 24px auto;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
@@ -32,28 +127,6 @@ li
 	margin-left: 24px;
 }
 
-li:first-child
-{
-	margin-left: 0;
-}
-
-/*li:after
-{
-	content: "-"
-}
-
-li:last-child:after
-{
-	content: "";
-}*/
-
-img
-{
-	width: 100%;
-	margin-bottom: 12px;
-	margin-top: 12px;
-}
-
 h1, h2, h3
 {
 	margin-top: 24px;
@@ -82,4 +155,13 @@ p
 {
 	font-size: 24px;
 	line-height: 36px;
+}
+
+img
+{
+	width: 100%;
+	margin-bottom: 12px;
+	margin-top: 12px;
+}
+
 }

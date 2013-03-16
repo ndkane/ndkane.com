@@ -68,8 +68,13 @@ nav
 img
 {
 	width: 100%;
-	margin-top: 12px;
+	margin-top: 0px;
 	margin-bottom: 12px;
+}
+
+img.diagram
+{
+	border: solid 1px lightgrey;
 }
 
 h1
@@ -211,8 +216,8 @@ figure
 
 {
 	font-size: smaller;
-	margin-bottom: 12px;
-	margin-top: 12px;
+	margin-bottom: 0px;
+	margin-top: 0px;
 	text-align: center;
 
 }
@@ -319,7 +324,7 @@ code
 		font-size: 24px;
 		line-height: 32px;
 		margin-bottom: 8px;
-		margin-top: 8px;
+		margin-top: 24px;
 	}
 
 	h2.underline
