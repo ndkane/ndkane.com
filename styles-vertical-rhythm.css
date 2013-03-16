@@ -77,6 +77,12 @@ img.diagram
 	border: solid 1px lightgrey;
 }
 
+img.ios-screenshots
+{
+	width: 400px;
+	width: 100%;
+}
+
 h1
 {
 	font-size: 30px;
@@ -347,5 +353,11 @@ code
 		border-left: solid lightgrey 2px;
 		padding-left: 12px;
 	}
+
+	img.ios-screenshots
+{
+	width: 390px;
+}
+
 
 	}
