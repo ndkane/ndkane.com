@@ -2,7 +2,7 @@ body
 {
 	line-height: 24px;
 	max-width: 750px;
-	margin: 24px 6px;
+	margin: 24px 24px;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
@@ -81,7 +81,7 @@ h3
 
 p
 {
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 30px;
 	text-align: justify;
 	-webkit-hyphens: auto;
@@ -93,75 +93,75 @@ p
 @media all and (min-width: 768px)
 {
 
-body 
-{
-	line-height: 24px;
-	max-width: 750px;
-	margin: 24px auto;
-	font-family: 'Lato', Helvetica, Arial, sans-serif;
-}
+	body 
+	{
+		line-height: 24px;
+		max-width: 750px;
+		margin: 24px auto;
+		font-family: 'Lato', Helvetica, Arial, sans-serif;
+	}
 
-nav
-{
-	padding-bottom: 18px;
-	border-bottom: solid 1px black;
-	margin-bottom: 60px;
-	text-align: center;
+	nav
+	{
+		padding-bottom: 18px;
+		border-bottom: solid 1px black;
+		margin-bottom: 60px;
+		text-align: center;
 
-}
+	}
 
-a
-{
-	text-decoration: none;
-}
+	a
+	{
+		text-decoration: none;
+	}
 
-nav a
-{
-	text-decoration: none;
-	font-size: 24px;
-}
+	nav a
+	{
+		text-decoration: none;
+		font-size: 24px;
+	}
 
-li 
-{
-	display: inline-block;
-	margin-left: 24px;
-}
+	li 
+	{
+		display: inline-block;
+		margin-left: 24px;
+	}
 
-h1, h2, h3
-{
-	margin-top: 24px;
-	margin-bottom: 12px;
-}
+	h1, h2, h3
+	{
+		margin-top: 24px;
+		margin-bottom: 12px;
+	}
 
-h1
-{
-	font-size: 60px;
-	line-height: 72px;
-}
+	h1
+	{
+		font-size: 60px;
+		line-height: 72px;
+	}
 
-h2
-{
-	font-size: 48px;
-	line-height: 60px;
-}
+	h2
+	{
+		font-size: 48px;
+		line-height: 60px;
+	}
 
-h3
-{
-	font-size: 36px;
-	line-height: 48px;
-}
+	h3
+	{
+		font-size: 36px;
+		line-height: 48px;
+	}
 
-p
-{
-	font-size: 24px;
-	line-height: 36px;
-}
+	p
+	{
+		font-size: 24px;
+		line-height: 36px;
+	}
 
-img
-{
-	width: 100%;
-	margin-bottom: 12px;
-	margin-top: 12px;
-}
+	img
+	{
+		width: 100%;
+		margin-bottom: 12px;
+		margin-top: 12px;
+	}
 
 }
