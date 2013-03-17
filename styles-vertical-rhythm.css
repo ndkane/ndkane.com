@@ -80,7 +80,7 @@ img.diagram
 img.ios-screenshots
 {
 	width: 75%;
-	margin: 0 auto;
+	margin: 12px auto;
 	display: block;
 	border: solid 1px black;
 }
@@ -96,8 +96,8 @@ h2
 {
 	font-size: 24px;
 	line-height: 28px;
-	margin-bottom: 8px;
-	margin-top: 8px;
+	margin-bottom: 12px;
+	margin-top: 24px;
 }
 
 h2.underline
