@@ -289,15 +289,11 @@ time
 	font-size: 12px;
 }
 
-/*Tab-size */
-code 
-{
-	tab-size: 2;
-}
-
 code
 {
-	font-family: Courier;
+	font-family: 'Courier New';
+	tab-size: 2; /* not widely supported */
+	font-size: 16px;
 }
 
 @media all and (min-width: 768px)

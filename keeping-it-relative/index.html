@@ -31,19 +31,20 @@
 
 		<h2>Fixing Things</h2>
 
-		<p>Last week we encountered a few problems with NDKane.com, largely that it looked terrible on mobile. This post will explain how I turned a wholly horrible site into a delightful little joy. However, first we had to sort out the navigation. As you can see here, on mobile it was very, very broken:</p>
+		<p>Last week, we encountered a few problems with NDKane.com. Largely, that it looked terrible on mobile. This post will explain how I turned a wholly horrible site into a delightful little joy. However, first we had to sort out the navigation. As you can see here, on mobile it was very, very broken:</p>
 
 		<img class="ios-screenshots" src="images/broken-navigation-screenshot.jpg" alt="A Screenshot of broken navigation on Mobile">
 
-		<p>Therefore, we took away the 'margin-left' that set the positioning as ‘absolute’ in the nav element. ‘Absolute’ means that the position is relative to the ancestor element, in this case, the body. This means that as the viewport changes, it will always remain relative to the body, and won’t drift as it did before.</p>
+		<p>We took away the <code>margin-left</code> and then set the position of the navigation as ‘absolute’. This made the position of the element relative to the ancestor element, in this case, the body. It means that as the viewport changes, the element will always remain relative to the body, and won’t drift as it did before.</p>
 
-		<p>We then replaced the margins with 'top' and 'right' which allows you to place the image. As we wanted the Navigation to be above the body, we needed to break from it. In order to break from the body, we had to work in negative pixels, therefore setting the top attribute it at -62px, aligning it with the logo text baseline. The right attribute was set at 0, in order to align with the body.</p>
+		<p>Instead of using margins, we set the top and right properties to position the image. 
+		As we wanted the Navigation to be above the body, we set a negative value for the <code>top</code> property. The <code>right</code> property was set to 0, to align it with the body.</p>
 
-		<h2>Logo-Links, and Positioning</h2>
+		<h2>Landmarks, and Positioning</h2>
 
-		<p>As you can see, I have a shiny new logo bookmark! The font used is called SuastOrnad TFB, by <a href="http://www.ffonts.net/SuastOrnad-tfb.font.viewreview" title="SuastOrnad tfb by Kaiser Zharkan">Kaiser Zharkhan</a>. Placing this was another exercise in breaking from the body. When I first placed this, I set it as a background image in the CSS, however this meant that I couldn’t set it as a home link, something that I wanted.</p>
+		<p>As you can see, I have a shiny new logo that looks like a bookmark! The font used is <a href="http://www.ffonts.net/SuastOrnad-tfb.font.viewreview" title="SuastOrnad tfb by Kaiser Zharkan">SuastOrnad TFB</a> by Kaiser Zharkhan. Positioning this was another exercise in breaking from the flow. When I first placed this, I set it as a background image in the CSS, however this meant that I couldn’t set it as a home link.</p>
 
-		<p>Therefore, I set the image within an h1 in the header, and then within the a element, allowing me to link back to my table of contents. In order to break from the body, I needed to set the position of my image. As it is within the header, I needed to set a rule for the img’s within them, which my logo was. As with the navigation, the position of the logo needed to be absolute to the body; I didn’t need to set the position to left, as this position is automatic. The top attribute is also set to negative pixels so that it is also above the body, aligned with the navigation.</p>
+		<p>So, I set the image within an <code>h1</code> in the header. Then, I wrapped the <code>h1</code> in an anchor tag, allowing me to link back to my table of contents. To break from the flow, I changed the positioning of my image from <code>inline</code> to <code>absolute</code>, as I did with the navigation.</p>
 
 		<pre><code class="language-css">header img
 {
@@ -62,42 +63,42 @@ header h1
 	line-height: 24px;
 }</code></pre>
 
-		<p>As the header image is broken from the body, the body itself moved down, and therefore I had to adapt the margin-top of the body to accomodate for the navigation and header image. Therefore, as the header image moved down to align, I had to bring the body up by decreasing the margin-top of the body, while keeping to my grid.</p>
+		<p>As the header image breaks from the body, the body itself moves down, and therefore we must adapt the <code>margin-top</code> of the body to accommodate for the navigation and header image. As the header image moves down, I bring the body up by decreasing the <code>margin-top</code> of the body, while keeping to my grid by using multiples of 24.</p>
 
-		<p>I’m using Lea Verou’s syntax highlighter <a href="http://prismjs.com" title="Prism - Syntax Highlighter">Prism</a> to highlight my code with the pre (preformatted text) element, which is rather delightful and, in my opinion, makes it easier to read and understand.</p>
+		<p>I’m using Lea Verou’s syntax highlighter <a href="http://prismjs.com" title="Prism - Syntax Highlighter">Prism</a> to highlight code elements that are wrapped inside a <code>pre</code> element, which is rather delightful and, in my opinion, makes it easier to read and understand. I don’t use <code>pre</code> by itself, as it is not semantic, a point that is also stressed in Lea’s library.</p>
 
 		<h2>Experiments</h2>
 
-		<p>As part of my homework, Aral has set me the task of redesigning websites that I have come across that I find particularly problematic. To find out more about my experiments you can visit my <a href="/redesigns">Redesign</a> page, and email me your comments and suggestions (or just tell me that I’m wrong!)</p>
+		<p>As part of my homework, Aral has set me the task of redesigning websites that I come across and find particularly problematic. To find out more about my experiments visit my <a href="/redesigns">Redesign</a> page, and <a href="mailto:nataliedenisekane@gmail.com">email me</a> your comments and suggestions.</p>
 
 		<h2>Media Queries</h2>
 
-		<p>As Aral has corrected me many times, the web is responsive, it’s just that many designers have become accustomed to making everything fixed in position, which is why a lot of sites arent’t. When learning how to fix my navigation, we came upon the larger problem of how my site looked in mobile, largely terrible. It looked all shiny and wonderful in a browser, however it broke apart as soon as it went mobile, or to a smaller browser size. Therefore I needed to learn about Breakpoints and Media Queries. I should tell you in advance, I’ve become rather good friends with Media Queries.
+		<p>As Aral has corrected me many times, the web is responsive by default, it’s just that many designers have become accustomed to creating fixed designs that break with the inherent responsiveness of the web. I realised that I was doing this when I checked my site on mobile. It looked all shiny and wonderful in a browser, however it broke apart as soon as it went mobile, or to a smaller browser size. To fix this, we started learning about Breakpoints and Media Queries. I should tell you in advance, I’ve become rather good friends with Media Queries.</p>
 
-		<p>A breakpoint is the point at which the code breaks; Yes I know it sounds obvious, however it doesn’t break exactly, rather transform and adapt to its environment. The first step was to figure out where my code should break. Aral drew me this rather useful diagram as a way of working out where to set my breakpoint:</p>
+		<p>A breakpoint is the point at which the design breaks. Yes, I know it sounds obvious, but breakpoints afford you the opportunity to transform and adapt your content to changes. For example, a three column layout may be illegible on a narrower screen, so your design must adapt to be legible, perhaps transforming to a single column layout. The first step was to figure out where my design would break. Aral drew me this rather useful diagram to illustrate where my design broke (a width of less than 600px for the body, combined with our font size, resulted in a measure that was too narrow):</p>
 
-		<figure><img class="diagram" src="images/breakpoint-diagram.jpg" alt="A diagram explaining how we calculated our breakpoint"><figcaption>How to we worked out my breakpoint for a media query</figcaption></figure>
+		<figure><img class="diagram" src="images/breakpoint-diagram.jpg" alt="A diagram explaining how we calculated our breakpoint"><figcaption>How to we worked out where my design broke.</figcaption></figure>
 
-		<p>As you can see, We added up the margins set on the header image, the image itself and the body, as we wanted to calculate where the code should change.Therefore, we set the breakpoint, the minimum width required to display the content in this manner, at 768px, which happens to be one of the dimensions of an iPad (768 x 1024)!</p>
+		<p>We set the breakpoint&#8202;—&#8202;the minimum width required to display the content in this manner&#8202;—&#8202;at 768px, which by coincidence is the device width of iPad. However it’s important to stress that breakpoints should not be set for specific devices, they should be determined by when your content breaks.</p>
 
 
-		<pre><code class="language-css">@media all and (min-width: 768px)
+		<figure><pre><code class="language-css">@media all and (min-width: 768px)
 {
-}</code></pre>
+}</code></pre><figcaption>A media query in the CSS</figcaption></figure>
 
-		<p>We then put all of the code required to make my site present  as detailed above within the media query, and then adapted all of the code outside of it to adapt to viewports greater than 768px. For example, when my viewport exceeds 768px, my header image will go from a width of 60px to 96px, making it smaller. My visual hierachy for my headlines, and their line-heights will also change and adapt when the viewport exceeds 768px. This is so that it reads and presents well on a smaller viewport, such as a mobile, or smaller tablet.</p>
+		<p>Instead of making the wider layout the default, we designed mobile-first. All of our base styles apply to devices that are narrower than the breakpoint we discovered (768px). In the media query, we overrode some of those base styles to adapt the design to wider viewports. For example, when my device width exceeds 768px, my header image goes from 60px to 96px, making it larger. The font size of my headlines, and their corresponding line-heights, also change and adapt when the device width exceeds 768px.</p>
 
-		<p>This is designing mobile-first, designing for mobile and then larger viewports. After learning about Media Queries, and fixing the problems I had with the viewport, my site on mobile now looks like this:</p>
+		<p>After learning about Media Queries, and fixing the problems I had with the viewport, my site on mobile now looks like this:</p>
 
 		<img class="ios-screenshots" src="images/fixed-navigation.jpg">
 
 		<h2>Other Things Learnt</h2>
 
-		<p>I learnt about using escaping entities to fix formatting problems, particularly with justified text, such as &amp;shy; which tells the code that it's okay to break there. I also learnt about the importance of visualising my design, actually drawing it out rather than trying to mentally picture it, and getting myself confused. I was also introduced to <a href="http://kapeli.com" title="Dash &amp;#8211; Snippet Manager, Documentation Browser - Kapeli">Dash</a>, which makes working a lot easier, and <a href="http://new.livestream.com/FosterKittenCam/TheCosmoFosters" title="The Cosmo Foster Kittens on Livestream">Foster Kitten Cam</a>, which makes my day a lot better. I told you that I liked Cats.</p>
+		<p>I learnt about using HTML entities to fix formatting problems, particularly with justified text, such as <code>&amp;shy;</code> (which tells the code that it's okay to break there). I also learnt about the importance of visualising my design; actually drawing it out rather than trying to mentally picture it and getting myself confused. I was also introduced to <a href="http://kapeli.com" title="Dash &amp;#8211; Snippet Manager, Documentation Browser - Kapeli">Dash</a>&#8202;—&#8202;a code snippet manager and API documentation browser&#8202;—&#8202;which makes working a lot easier, and <a href="http://new.livestream.com/FosterKittenCam/TheCosmoFosters" title="The Cosmo Foster Kittens on Livestream">Foster Kitten Cam</a>, which makes my day a lot better. I told you that I liked cats.</p>
 
-		<p>Next week I’m learning about Root Ems. As I’ve mentioned, maths scares me, however I’ve been promised that I won’t need a Maths degree to know them.</p>
+		<p>Next week, I’m learning about root ems. As I’ve mentioned, maths scares me, however I’ve been promised that I won’t need a maths degree to know them.</p>
 
-		<p>Danish Phrase of the Week: Vi har mange fugle i vores have — We have many birds in our garden.</p> 
+		<p>Danish Phrase of the Week: Vi har mange fugle i vores have&#8202;—&#8202;We have many birds in our garden.</p> 
 
 		<p>(Mine katte elsker fugle, de er meget uartig, men de lever inde for vore flad.)</p>
 
