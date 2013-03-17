@@ -81,6 +81,7 @@ img.ios-screenshots
 {
 	width: 400px;
 	width: 100%;
+	border: solid 1px black;
 }
 
 h1
