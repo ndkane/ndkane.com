@@ -79,8 +79,9 @@ img.diagram
 
 img.ios-screenshots
 {
-	width: 400px;
-	width: 100%;
+	width: 75%;
+	margin: 0 auto;
+	display: block;
 	border: solid 1px black;
 }
 
@@ -352,9 +353,21 @@ code
 	}
 
 	img.ios-screenshots
-{
-	width: 390px;
-}
-
-
+	{
+		width: 50%;
+		float: right;
+		/*margin-right: 24px;*/
+		margin-left: 24px;
+		margin-bottom: 12px;
+		margin-top: 12px;
 	}
+
+	img.ios-screenshots:nth-child(2n+1)
+	{
+		float: left;
+		margin-right: 24px;
+		margin-left: 0;
+	}
+
+
+}

@@ -33,7 +33,7 @@
 
 		<p>Last week, we encountered a few problems with NDKane.com. Largely, that it looked terrible on mobile. This post will explain how I turned a wholly horrible site into a delightful little joy. However, first we had to sort out the navigation. As you can see here, on mobile it was very, very broken:</p>
 
-		<img class="ios-screenshots" src="images/broken-navigation-screenshot.jpg" alt="A Screenshot of broken navigation on Mobile">
+		<img class="ios-screenshots" src="images/broken-navigation.png" alt="A Screenshot of broken navigation on Mobile">
 
 		<p>We took away the <code>margin-left</code> and then set the position of the navigation as ‘absolute’. This made the position of the element relative to the ancestor element, in this case, the body. It means that as the viewport changes, the element will always remain relative to the body, and won’t drift as it did before.</p>
 
@@ -88,7 +88,7 @@ header h1
 
 		<p>Instead of making the wider layout the default, we designed mobile-first. All of our base styles apply to devices that are narrower than the breakpoint we discovered (768px). In the media query, we overrode some of those base styles to adapt the design to wider viewports. For example, when my device width exceeds 768px, my header image goes from 60px to 96px, making it larger. The font size of my headlines, and their corresponding line-heights, also change and adapt when the device width exceeds 768px.</p>
 
-		<p>After learning about Media Queries, and fixing the problems I had with the viewport, my site on mobile now looks like this:</p>
+		<p>After learning about Media Queries, and fixing the problems I had with the viewport, my site on mobile now looks like the figure below.</p>
 
 		<img class="ios-screenshots" src="images/fixed-navigation.png">
 

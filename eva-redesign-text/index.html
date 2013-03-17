@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>ND Kane — Redesigns — EVA</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/styles-vertical-rhythm.css">
+		<!-- <link rel="stylesheet" href="/styles.css"> -->
+		<meta name='viewport' content='width=device-width'>
+	</head>
+
+	<body>
+	
+		<header>
+			<h1><a href="/">Natalie D Kane</a></h1>
+			<ul>
+				<li class="current"><a href="/">Content Out</a></li>
+				<li><a href="/art">Art</a></li>
+			</ul>
+
+		</header>
+
+		<h1>Redesigns - EVA London</h1>
+
+		<time datetime="2013-03-02">March 2nd, 2013</time>
+
+		<img src="images/eva-banner.png">
+		
+		<h2>The Website</h2>
+
+		<p>I came across the Electronic Visualisation and the Arts website when I was looking for conferences that I wanted to plan for this year. Over the last year or two I’ve found myself going to more conferences, symposiums or seminars as it’s often the best place to encounter new ideas, or even meet new people interested in what you’re interested in. I wanted to get a good idea of what to expect from EVA this year, so I took a look at their <a href="http://www.eva-london.org/past-eva-londons/past-eva-londons/2012" title="Past EVA Londons | EVA London">previous programmes.</a></p>
+
+		<h2>The Problem</h2>
+		
+		<figure><img src="images/screenshot-text-eva.png"><figcaption>A section of the programme text from EVA London 2012</figcaption></figure>
+
+		<p>My main concern was how difficult it was to read the page, as there was no distinguishable visual hierachy. The Serif font also made it difficult to read as the line height wasn’t substantial enough to let it read easily. Therefore I took a look at the typography, and changed things to make them a little bit easier on the eye. Aral set me the task of transforming the text because he was probably tired of me complaining about it. It’s not a redesign of the site, but rather how the page reads.</p> 
+
+		<h2>My Redesign</h2>
+
+		<a href="/eva-redesign">My redesign</a> is wholly typographical, there are many things I would change, however I’m not that confident yet! Below I’ve detailed how I went about changing things.
+
+		<h2>CSS</h2>
+
+		<p>First things first, in order to override any of the instructions given by the original CSS stylesheet I had to create my own. Therefore I created my own and placed it just before the &lt;/head&gt;. I then laid out a very simple vertical rhythm, working on a body base line—height of 24px. This made it easy for me to work out my hierachy of headlines.</p> 
+		<h2>Headlines and Visual Hierachies</h2>
+
+		<figure><img src="images/screenshot-code-eva.png"><figcaption>A section of the code with headlines (and a lot of spaces!)</figcaption></figure>
+
+		<p>As mentioned previously, there wasn’t much distinction between headlines, therefore, working from the base line height that I had set in the body, I created a hierachy. It seemed that rather than applying specific classes to the same headline (e.g. “h2.italics”) they had just used the next headline in the order to apply the rules. This also allowed me to set margins for the headlines, which got rid of all of those pesky &lt;br /&gt;! However, this was a great exercise in CSS specificity for me, as the more specific style always wins. I encountered a few times where my code just wasn’t working, and it was because of a few rogue ID’s set on the headline that I had to override by setting my own rules (That’s me putting the foot down.)</p>
+
+		<h2>Formatting</h2>
+
+		<figure><img src="images/br-tag.png"><figcaption>Brrr!</figcaption></figure>
+
+		<p>Talking of &lt;br/&gt;, when I experimented with code in my teens, hacking at my MySpace page in html until it was unrecognisable, I used them A Lot. This seems the case here, and although I’ve been told that in xhtml, this is fine, in HTML5 it doesn’t quite hold up. I’ve got very used to working in a way that allows me to control my elements without using another specifically for the job, which I can then apply rules for. As I neatened up the code, I found many, so we’re not on the best terms at the moment.</p>
+
+		<p>I also formatted the lists properly, as before it wasn’t clear who the speakers were. Therefore I just neatened it up by placing the text nicely into an unordered list! This helped break the text up a bit so it wasnt one big glob.</p>
+
+		<h2>Typography</h2>
+
+		<p>I changed the font to match the rest of the page, I can understand the need for two fonts as part of a sites specific design, but in this case, the two didn’t seem to work harmoniously in the design, and it didn’t make it easy to read. Therefore I changed the body font to Helvetica, the main font in the surrounding columns.</p>
+
+		<h2>Other Issues</h2>
+
+		<p>Of course, there are other issues with the website that I haven’t learnt how to fix yet, and I would love to look at experimenting with navigation, after being inspired by <a href="http://dbushell.com" title="David Bushell &amp;#8211; Web Design &amp;amp; Front-end Development">David Bushell</a> at <a href="http://responsiveconf.com" title="Responsive Day Out &amp;#183; Friday, 1 March 2013 &amp;#183; Brighton">Responsive Day Out</a> this weekend.</p>
+
+		<p>Also, since I am learning at a time that Responsive Web Design is slowly becoming a standard (as it should be), I can’t unsee how unresponsive the site is. But that’s another mission for another time.</p>
+
+		<p>Fremad og opad!</p>
+
+		<a href="/redesigns">Back to the Redesign Page</a>
+
+		<footnote>
+			<p>Copyright © 2013 Natalie D. Kane</p>
+		</footnote>
+
+	</body>
+</html>
