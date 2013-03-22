@@ -85,6 +85,7 @@ img.ios-screenshots
 	border: solid 1px black;
 }
 
+
 h1
 {
 	font-size: 30px;
@@ -162,6 +163,22 @@ li
 ul.redesign-versions
 {
 	padding-left: 24px;
+}
+
+ul.gallery
+{
+	list-style-type: none;
+
+}
+
+ul.gallery img
+{
+	width: 100%;
+}
+
+ul.gallery li
+{
+	display: inline;
 }
 
 .footnote
@@ -367,6 +384,23 @@ code
 		float: left;
 		margin-right: 24px;
 		margin-left: 0;
+	}
+
+	ul.gallery
+	{
+		list-style-type: none;
+
+	}
+
+	ul.gallery img
+	{
+		width: 43%;
+	}
+
+	ul.gallery li
+	{
+		display: inline;
+		margin: 1em;
 	}
 
 
