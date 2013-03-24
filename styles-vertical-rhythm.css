@@ -173,7 +173,7 @@ ul.gallery
 
 ul.gallery img
 {
-	width: 45%;
+	width: 43%;
 	margin: 0.5em;
 }
 
@@ -401,7 +401,7 @@ code
 	ul.gallery li
 	{
 		display: inline;
-		margin: 1em;
+		margin: 0.5em;
 	}
 
 
