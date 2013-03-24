@@ -316,6 +316,17 @@ code
 	font-size: 16px;
 }
 
+strong
+{
+	font-weight: bold;
+	color: #0648D6;
+}
+
+strong.first-item
+{
+	color: orange;
+}
+
 @media all and (min-width: 768px)
 {
 	body 
@@ -368,6 +379,11 @@ code
 		margin-right: 48px;
 		border-left: solid lightgrey 2px;
 		padding-left: 12px;
+	}
+
+	blockquote.equation
+	{
+		border-left: none;
 	}
 
 	img.ios-screenshots
