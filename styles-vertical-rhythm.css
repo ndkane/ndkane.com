@@ -4,14 +4,14 @@ body
 /*	background-image: url("/images/24px-grid.gif");
 */	max-width: 600px;
 	margin: 108px 24px 48px 24px;
-	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+	font-family: 'Gudea', Palatino, serif;
 }
 
 header
 {
 	margin-left: 0px;
 	margin-bottom: 36px;
-	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+	font-family: 'Galdeano', Book Antiqua, Palatino, serif;
 	position: relative; 
 }
 
@@ -91,6 +91,7 @@ h1
 	font-size: 30px;
 	line-height: 42px;
 	margin-bottom: 12px;
+	font-family: Galdeano, Palatino Linotype, serif;
 }
 
 h2
@@ -99,6 +100,7 @@ h2
 	line-height: 28px;
 	margin-bottom: 12px;
 	margin-top: 24px;
+	font-family: Galdeano, Palatino Linotype, serif;
 }
 
 h2.underline
@@ -122,6 +124,7 @@ p
 	hyphens: auto;
 	margin-bottom: 12px;
 	margin-top: 12px;
+	font-family: 'Gudea', Helvetica;
 }
 
 p.smaller
