@@ -79,7 +79,7 @@
 
 		<p>However, in this example, the font size in the <code>h1</code> was set at 42px, so in order to determine the ems we have to divide it by 16, the root font size. However, as you can see by the comments next to it, you can’t just divide the line-height and margins by 16 too, as the font size has changed. You have to divide it by the context set in the element, the <code>h1</code>, in this case, 42px. I made this mistake initially, dividing all of the values by 16px which messed up my test page, getting very angry in the process.</p>
 
-		<p>So, as the parent element (context) changes, the children contained change accordingly. Here are a few simple things to remember when you’re working with ems.</p>
+		<p>So, as the parent element (context) changes, the children contained change accordingly. Values set in ems are relative to the text size of the element. Due to the cascade, the text size may be inherited from parent elements. Here are a few simple things to remember when you’re working with ems.</p>
 
 		<ul>
 			<li>If no font size is set, it will inherit it from its parent element.</li>
