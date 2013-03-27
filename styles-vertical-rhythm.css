@@ -4,14 +4,15 @@ body
 /*	background-image: url("/images/24px-grid.gif");
 */	max-width: 600px;
 	margin: 108px 24px 48px 24px;
-	font-family: 'Gudea', Palatino, serif;
+	font-family: 'adelle', Palatino, serif;
 }
 
 header
 {
 	margin-left: 0px;
 	margin-bottom: 36px;
-	font-family: 'Galdeano', Book Antiqua, Palatino, serif;
+	font-family: 'adelle', Book Antiqua, Palatino, serif;
+	font-weight: 300;
 	position: relative; 
 }
 
@@ -91,7 +92,9 @@ h1
 	font-size: 30px;
 	line-height: 42px;
 	margin-bottom: 12px;
-	font-family: Galdeano, Palatino Linotype, serif;
+	font-family: "adelle",serif;
+	font-style: normal;
+	font-weight: 700;
 }
 
 h2
@@ -100,7 +103,7 @@ h2
 	line-height: 28px;
 	margin-bottom: 12px;
 	margin-top: 24px;
-	font-family: Galdeano, Palatino Linotype, serif;
+	font-family: 'Adelle', Palatino Linotype, serif;
 }
 
 h2.underline
@@ -124,7 +127,9 @@ p
 	hyphens: auto;
 	margin-bottom: 12px;
 	margin-top: 12px;
-	font-family: 'Gudea', Helvetica;
+	font-family: "adelle",serif;
+	font-style: normal;
+	font-weight: 300;
 }
 
 p.smaller
@@ -161,6 +166,8 @@ ul
 li 
 {
 	margin: 12px 0;
+	font-family: 'Adelle', Palatino Linotype, Book Antiqua, Serif;
+	font-weight: 300;
 }
 
 ul.redesign-versions
@@ -307,6 +314,11 @@ blockquote
 	padding-left: 12px;
 }
 
+blockquote.equation
+{
+	border-left: none;
+}
+
 time
 {
 	font-size: 12px;
@@ -382,11 +394,6 @@ strong.first-item
 		margin-right: 48px;
 		border-left: solid lightgrey 2px;
 		padding-left: 12px;
-	}
-
-	blockquote.equation
-	{
-		border-left: none;
 	}
 
 	img.ios-screenshots
