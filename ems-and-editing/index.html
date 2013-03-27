@@ -33,7 +33,7 @@
 
 		<h2>A few notes on Editing</h2>
 
-		<p>Before I talk about my brief and bloody battle with ems, it’s important for me to note the importance of self-editing, and reading through things a few times. Before I publish these posts, or even draw attention to them, I always send them to Aral first. This is so that he can ensure that I have included every step properly, but also to make sure other people (including Future Me) can understand it. It’s not just about spelling, but the whole damn thing. I’ll very happily admit that writing regularly is a new thing to me. I come from an academic background, where ways of writing are different. Of course there are basic rules, such as proper grammar and spelling. However, with this kind of post, it is more conversational and there is no assumed knowledge as with academic rhetoric. I need to be able to talk about my lessons to anyone, at any level of web design, as I am a beginner myself.</p>
+		<p>Before I talk about my brief and bloody battle with ems, it’s important for me to note the importance of self-editing, and reading through things a few times. Before I publish these posts, or even draw attention to them, I always send them to Aral first. This is so that he can ensure that I have included every step properly, but also to make sure other people (including Future Me) can understand them. It’s not just about spelling, but the whole damn thing. I’ll very happily admit that writing regularly is a new thing to me. I come from an academic background, where ways of writing are different. Of course there are basic rules, such as proper grammar and spelling. However, with this kind of post, it is more conversational and there is no assumed knowledge as with academic rhetoric. I need to be able to talk about my lessons to anyone, at any level of web design, as I am a beginner myself.</p>
 
 		<p>Therefore, I’ve been banned from starting sentences with ‘Therefore’. I think I’ve been using it as a cop-out. Rather than directly and succinctly addressing something, I have been lazily using it to make a passive reference to the previous action. This doesn’t help if it’s preceded by a diagram, as it’s quite easy to lose your trail of thought after looking at a visual reference. I also need to stop using the word ‘it’ and just say the thing I’m talking about. I need to be able to explain things, not confuse myself and others.</p>
 
@@ -43,7 +43,7 @@
 
 		<p>As you’ve probably gathered from reading the beginning of this post, and many others, the relationship I have with Maths is quite fractured. We didn’t get on at school, and as we’ve grown older we’ve tried to understand each other. However, it doesn’t stop us fighting.</p>
 
-		<p>This is why I struggled a bit with ems. I’ve been told by Aral that this is a necessary process, as although I’m going to learn about root ems, I will occasionally have to use them. It’s also really valuable to know why one thing is better than another, even though it’s hard. Aral asked me to create a <a href="/relative-sizing">new page</a> from scratch, and then use it to test ems. Here is where I learn about ems; why they are used and how they work.</p>
+		<p>This is why I struggled a bit with ems. I’ve been told by Aral that this is a necessary process, as although I’m going to learn about root ems, I will occasionally have to use ems. It’s also really valuable to know why one thing is better than another, even though it’s hard. Aral asked me to create a <a href="/relative-sizing">new page</a> from scratch, and then use it to test ems. Here is where I learn about ems; why they are used and how they work.</p>
 
 		<p>An em is a unit of measurement, used instead of pixels (however it can be used with pixels). An em is relative to the font size of its context or the elements contained within . In order to convert pixels into ems, you need to identify two things through a simple equation (it’s really simple, I promise). If we define <strong class="first-item">context</strong> as the font size set by an element (such as <code>HTML</code> or <code>body</code>), and the <strong>target</strong> as the pixel size you want to achieve, the equation is as follows:</p>
 
@@ -57,8 +57,6 @@
 			<p><strong class="first-item">24px</strong> ÷ <strong>16px</strong> = 1.5ems</strong></p>
 		</blockquote>
 
-		<p>Here we have converted the base line height into ems. As we already know the root font size is 16px, determined by the html, and no font size has been sent, we can divide all of the values in pixels by 16 in order to translate it into ems. The sums is provided in the comments on the right.<p>
-
 <pre><code class="language-css">body 
 {
 	line-height: 1.5em; /* 24px/16px */
@@ -67,7 +65,7 @@
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }</code></pre>
 
-		<p>Here is the <code>h1</code> element. As we already know, the root font size is 16px, and as no previous different font size has been set in the body, the h1 inherits the font size from the <code>body</code>, which inherited from the <code>HTML</code> making it 16px.</p>
+		<p>Here we have converted the base line height into ems. As we already know the root font size is 16px, determined by the html element, and no font size has been sent, we can divide all of the values in pixels by 16 in order to translate it into ems. The sums is provided in the comments on the right.<p>
 
 <pre><code class="language-css">h1
 { 
@@ -77,13 +75,15 @@
 	margin-bottom: .380952381em; /* 16px/42px */
 }</code></pre>
 
+		<p>Here is the <code>h1</code> element. As we already know, the root font size is 16px, and as no previous different font size has been set in the body, the h1 inherits the font size from the <code>body</code>, which inherited from the <code>HTML</code> making it 16px.</p>
+
 		<p>However, in this example, the font size in the <code>h1</code> was set at 42px, so in order to determine the ems we have to divide it by 16, the root font size. However, as you can see by the comments next to it, you can’t just divide the line-height and margins by 16 too, as the font size has changed. You have to divide it by the context set in the element, the <code>h1</code>, in this case, 42px. I made this mistake initially, dividing all of the values by 16px which messed up my test page, getting very angry in the process.</p>
 
 		<p>So, as the parent element (context) changes, the children contained change accordingly. Values set in ems are relative to the text size of the element. Due to the cascade, the text size may be inherited from parent elements. Here are a few simple things to remember when you’re working with ems.</p>
 
 		<ul>
 			<li>If no font size is set, it will inherit it from its parent element.</li>
-			<li>If it is set, then that will be your context.</li>
+			<li>If the font is set, then that will be your context.</li>
 		</ul>
 
 		<p>Setting your sizes to ems also solves one other thing. I’ve been slightly confused when setting the values in my media queries, often realising that I haven’t specified something for the larger window that eventually breaks my design. I have been designing for smaller windows, then changing the value once the design breaks. So, all I need to specify is the attributes in the body, as then all elements with be relative to it as the parent and will adapt accordingly:</p>
