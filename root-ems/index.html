@@ -49,6 +49,39 @@
 
 		<h2>Root ems</h2>
 
+		<p>As you may have noticed, last week I struggled with ems. Even after I’d got the hang of them, they still weren’t very simple to comprehend. This is where I was introduced to root ems, or rems in short.</p>
+
+		<p>Unlike ems, root ems are always relative to the root element’s font size. Whereas ems inherit their value from the context, the parent element, root ems always equal the same value. So if the <code>html</code> <code>font-size</code> is set at 16px, then a rem will always equal 16px, regardless of the context in which they are used in the <code>html</code>.</p>
+<figure><pre><code class="language-css">html
+{
+	font-size: 10px;
+}
+
+body
+{
+	font-size: 2rem; /* = 20px */
+	margin-left: 1rem; /* = 10px */
+}
+
+p
+{
+	font-size: 4rem; /* = 40px */
+	margin: 8rem; /* = 80px */
+}</code></pre><figcaption>An example of root ems used within the html.</figcaption></figure>
+
+		<p>As demonstrated above, if the <code>html</code> <code>font-size</code> is set at 10px, the value of 1<code>rem</code> equals 10px. If the <code>body</code> sets the <code>font-size</code> at 2<code>rem</code>, the margins set within it are not relative to the parent element, but to the root, and therefore 1<code>rem</code> still remains at 10px. This also applies to any element within the <code>body</code>, such as the <code>p</code> element, which also inherits its value from the root, rather than the parent element, the <code>body</code>.</p>
+
+		<p>In a media query, things change a little. As the value of a <code>rem</code> is still determined by the root&#8202;—&#8202;the <code>html</code>&#8202;—&#8202;any elements set in a media query that change when a breakpoint is breached are still relative to the root. This doesn’t help when you want things to be larger, so you will have to set the root font-size in the html.</p>
+
+		<p>As you can see, this is pretty simple to grasp, however, as values become decimal it becomes quite difficult to visualise things and it still requires a bit of maths. For example, if your base font size is set at 16px, and your margin is set at 24px, you will have to work out what this is in rems by dividing 24px by 16px. This leaves you with 1.5<code>rem</code>. As you can imagine, when values are divided and numbers after the decimal point become longer, it become really hard to visualise your design, as not everyone is a genius with numbers (certainly not me).</p>
+
+		<h2>Pixel-parity root ems</h2>
+
+		<p>Now, root ems are all well and good, however you can’t really visualise root ems easily. However, you can visualise pixels, so Aral introduced me to a new way of thinking about using root ems. Aral has written a really good post on pixel-parity rems over on his blog, which may explain this in a better way than I can!</p>
+
+		<p>Aral’s problems with visualising rems was echoed by Chris Jacob, who suggested a simple solution in his <a href="http://jsbin.com/acide4/8" title="ROOT EM! Using CSS3 "rem" Units for "Elastic Pixels"">Elastic Pixels gist</a>. What is 1rem was equal to 1px? If the base font size is set at 1px, then 1rem equals 1px. This makes visualising design so much simpler, as rather than dividing values by the root with a value larger than 1px and coming up with ridiculous decimal numbers, you can 
+
+
 		<h2>Homework</h2>
 
 		<a href='/'>Return to the introduction!</a>
