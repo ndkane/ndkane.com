@@ -4,14 +4,14 @@ body
 /*	background-image: url("/images/24px-grid.gif");
 */	max-width: 600px;
 	margin: 108px 24px 48px 24px;
-	font-family: 'adelle', Palatino, serif;
+	font-family: 'adelle', Georgia, serif;
 }
 
 header
 {
 	margin-left: 0px;
 	margin-bottom: 36px;
-	font-family: 'adelle', Book Antiqua, Palatino, serif;
+	font-family: 'adelle', Georgia, serif;
 	font-weight: 300;
 	position: relative; 
 }
@@ -92,7 +92,7 @@ h1
 	font-size: 30px;
 	line-height: 42px;
 	margin-bottom: 12px;
-	font-family: "adelle",serif;
+	font-family: "adelle", Georgia, serif;
 	font-style: normal;
 	font-weight: 700;
 }
@@ -103,7 +103,7 @@ h2
 	line-height: 28px;
 	margin-bottom: 12px;
 	margin-top: 24px;
-	font-family: 'Adelle', Palatino Linotype, serif;
+	font-family: 'Adelle', Georgia, serif;
 }
 
 h2.underline
@@ -127,7 +127,7 @@ p
 	hyphens: auto;
 	margin-bottom: 12px;
 	margin-top: 12px;
-	font-family: "adelle",serif;
+	font-family: "adelle", Georgia, serif;
 	font-style: normal;
 	font-weight: 300;
 }
