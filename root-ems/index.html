@@ -79,10 +79,21 @@ p
 
 		<p>Now, root ems are all well and good, however you can’t really visualise root ems easily. However, you can visualise pixels, so Aral introduced me to a new way of thinking about using root ems. Aral has written a really good post on pixel-parity rems over on his blog, which may explain this in a better way than I can!</p>
 
-		<p>Aral’s problems with visualising rems was echoed by Chris Jacob, who suggested a simple solution in his <a href="http://jsbin.com/acide4/8" title="ROOT EM! Using CSS3 "rem" Units for "Elastic Pixels"">Elastic Pixels gist</a>. What is 1rem was equal to 1px? If the base font size is set at 1px, then 1rem equals 1px. This makes visualising design so much simpler, as rather than dividing values by the root with a value larger than 1px and coming up with ridiculous decimal numbers, you can 
+		<p>Aral’s problems with visualising rems was echoed by Chris Jacob, who suggested a simple solution in his <a href="http://jsbin.com/acide4/8" title="ROOT EM! Using CSS3 "rem" Units for "Elastic Pixels"">Elastic Pixels gist</a>. What if 1rem was equal to 1px? If the base font size is set at 1px, then 1rem will equal 1px. So, rather than dividing values by the root which has a value larger than 1px&#8202;—&#8202;resulting in a lot of ridiculous decimal numbers&#8202;—&#8202;you can set the font size in the html to 1px. This means that to set a <code>margin-left</code> value that equals 500px, as the root font size set in the <code>html</code> is 1px, you only have to set the value as 500rems. This makes design a whole lot easier to visualise, as it’s much easier to imagine in pixels.</p>
 
+		<!--Insert paragraph about media queries -->
+
+		<p>The one problem that both Aral and Chris Jacobs point out is that not all browsers support rems, such as IE8 and Opera Mini. I’ll have to ask Aral in my next solution how I would create a fallback option for this. I’ve already started searching for a good IE8 debug which will make my site look how it should, rather than Frankenstein’s Monster.</p>
 
 		<h2>Homework</h2>
+
+		<ol>
+			<li>Look for, and devour, good articles on typography and Web Design.</li>
+			<li>Research CSS Pre-processors: Stylus and Sass</li>
+			<li>Create my design page, where I’ll fully explain all of the 1930s horror films.</li>
+		</ol>
+
+		<p>Jeg vil holde øje med en masse danske film i denne weekend. Hvis du har nogle anbefalinger, så lad mig det vide!</p>
 
 		<a href='/'>Return to the introduction!</a>
 
