@@ -1,0 +1,125 @@
+<!doctype HTML>
+<html lang="en">
+	<head>
+		<script type="text/javascript" src="//use.typekit.net/auv1kqp.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<title>ND Kane &#8202;—&#8202; Ems and Editing</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/styles-vertical-rhythm.css">
+		<link rel="stylesheet" href="/prism.css ">
+		<!-- <link rel="stylesheet" href="/styles.css"> -->
+		<meta name='viewport' content='width=device-width'>
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1><a href="/"><img src="/images/page-logo.jpg"></a></h1>
+		
+			<nav>
+				<ul>
+					<li class="current"><a href="/">Content Out</a></li>
+					<li><a href="/art">Art</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<h1>Ems and Editing</h1>
+
+		<figure><img src="images/the-old-dark-house-1932.jpg"><figcaption>Still from The Old Dark House, 1932 dir. James Whale</figcaption></figure>
+
+		<h2>A few notes on Editing</h2>
+
+		<p>Before I talk about my brief and bloody battle with ems, it’s important for me to note the importance of self-editing, and reading through things a few times. Before I publish these posts, or even draw attention to them, I always send them to Aral first. This is so that he can ensure that I have included every step properly, but also to make sure other people (including Future Me) can understand them. It’s not just about spelling, but the whole damn thing. I’ll very happily admit that writing regularly is a new thing to me. I come from an academic background, where ways of writing are different. Of course there are basic rules, such as proper grammar and spelling. However, with this kind of post, it is more conversational and there is no assumed knowledge as with academic rhetoric. I need to be able to talk about my lessons to anyone, at any level of web design, as I am a beginner myself.</p>
+
+		<p>Therefore, I’ve been banned from starting sentences with ‘Therefore’. I think I’ve been using it as a cop-out. Rather than directly and succinctly addressing something, I have been lazily using it to make a passive reference to the previous action. This doesn’t help if it’s preceded by a diagram, as it’s quite easy to lose your trail of thought after looking at a visual reference. I also need to stop using the word ‘it’ and just say the thing I’m talking about. I need to be able to explain things, not confuse myself and others.</p>
+
+		<p>I’m also going to read it a couple of times, then read my posts out loud to make sure they are clear, and make sense. Luckily you’re reading these posts at the finished content, however, there have been times where I have really confused myself trying to explain myself relatively simple. Aral tells me this is fine, it takes a while to think like an editor, so I shouldn’t be too hard on myself.</p>
+
+		<h2>A Beginner’s Guide to ems (written by a beginner)</h2>
+
+		<p>As you’ve probably gathered from reading the beginning of this post, and many others, the relationship I have with Maths is quite fractured. We didn’t get on at school, and as we’ve grown older we’ve tried to understand each other. However, it doesn’t stop us fighting.</p>
+
+		<p>This is why I struggled a bit with ems. I’ve been told by Aral that this is a necessary process, as although I’m going to learn about root ems, I will occasionally have to use ems. It’s also really valuable to know why one thing is better than another, even though it’s hard. Aral asked me to create a <a href="/relative-sizing">new page</a> from scratch, and then use it to test ems. Here is where I learn about ems; why they are used and how they work.</p>
+
+		<p>An em is a unit of measurement, used instead of pixels (however it can be used with pixels). An em is relative to the font size of its context or the elements contained within . In order to convert pixels into ems, you need to identify two things through a simple equation (it’s really simple, I promise). If we define <strong class="first-item">context</strong> as the font size set by an element (such as <code>HTML</code> or <code>body</code>), and the <strong>target</strong> as the pixel size you want to achieve, the equation is as follows:</p>
+
+		<blockquote class="equation">
+			<p><strong class="first-item">target</strong> ÷ <strong>context</strong> = value in ems.</p>
+		</blockquote>
+
+		<p>The root font size set by the HTML is 16px, which equals to 1em. Therefore, if we want to work out the ems desired to attain a pixel size equal to 24px, we must identify the context. If the context is the <code>body</code>, then unless an alternate root font size has been set, it inherits the font size from the HTML:</p>
+
+		<blockquote class="equation">
+			<p><strong class="first-item">24px</strong> ÷ <strong>16px</strong> = 1.5ems</strong></p>
+		</blockquote>
+
+<pre><code class="language-css">body 
+{
+	line-height: 1.5em; /* 24px/16px */
+	max-width: 46.875em; /* 750px/16px */
+	margin: 1.5em 1.5em; /* 24px/16px */
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+}</code></pre>
+
+		<p>Here we have converted the base line height into ems. As we already know the root font size is 16px, determined by the html element, and no font size has been sent, we can divide all of the values in pixels by 16 in order to translate it into ems. The sums is provided in the comments on the right.<p>
+
+<pre><code class="language-css">h1
+{ 
+	font-size: 2.625em; /* 42px/16px */
+	line-height: 1.428571429em; /* 60px/42px */
+	margin-top: .571428571em; /* 24px/42px */
+	margin-bottom: .380952381em; /* 16px/42px */
+}</code></pre>
+
+		<p>Here is the <code>h1</code> element. As we already know, the root font size is 16px, and as no previous different font size has been set in the body, the h1 inherits the font size from the <code>body</code>, which inherited from the <code>HTML</code> making it 16px.</p>
+
+		<p>However, in this example, the font size in the <code>h1</code> was set at 42px, so in order to determine the ems we have to divide it by 16, the root font size. However, as you can see by the comments next to it, you can’t just divide the line-height and margins by 16 too, as the font size has changed. You have to divide it by the context set in the element, the <code>h1</code>, in this case, 42px. I made this mistake initially, dividing all of the values by 16px which messed up my test page, getting very angry in the process.</p>
+
+		<p>So, as the parent element (context) changes, the children contained change accordingly. Values set in ems are relative to the text size of the element. Due to the cascade, the text size may be inherited from parent elements. Here are a few simple things to remember when you’re working with ems.</p>
+
+		<ul>
+			<li>If no font size is set, it will inherit it from its parent element.</li>
+			<li>If the font is set, then that will be your context.</li>
+		</ul>
+
+		<p>Setting your sizes to ems also solves one other thing. I’ve been slightly confused when setting the values in my media queries, often realising that I haven’t specified something for the larger window that eventually breaks my design. I have been designing for smaller windows, then changing the value once the design breaks. So, all I need to specify is the attributes in the body, as then all elements with be relative to it as the parent and will adapt accordingly:</p>
+
+<pre><code class="language-css">@media all and (min-width: 768px)
+{
+
+	body
+	{
+		font-size: 1.5em; /* 24px/16px */
+		max-width: 31.25em; /* 750px/24px */
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}</code></pre>
+
+		<p>Once I’d got the hang of it, it completely made sense, however it’s not the easiest form of measurement to work with, as it requires quite a bit of maths to work it out. It’s not that easy to adjust either, as in order to adjust anything you need to convert the em back into pixels, then convert that new value into ems. Also, if the set font size changes, then all the values within it need to be changed. I can see why it might become annoying after a while. However, in terms of responsiveness, it works well.</p>
+
+		<h2>Homework</h2>
+
+		<ol>
+			<li>Read Aral’s post on <a href="http://aralbalkan.com/notes/pixel-parity-rems/" title="Aral Balkan&amp;#8202;—&amp;#8202;Pixel‐parity rems">Pixel-Parity rems</a> in preparation for next week.</li>
+			<li>Read <a href="http://mobile.smashingmagazine.com/2012/06/18/mobile-considerations-in-user-experience-design-web-or-native/" title="Mobile Considerations in User Experience Design: “Web or Native?” | Smashing Mobile">‘Mobile Considerations in User Experience Design: “Web or Native?”’</a> in Smashing Magazine by Aral</li>
+			<li>Read and Write more. I’ve been writing about <a href="/art-and-google-images">Art in the age of Google Image Search</a> this week, where I’ve been considering how the control of an image and artist intention are changed by the ability to reproduce and search online.</li>
+		</ol>
+
+		<p>Danish phrase of the week: Min luftpudebåd er fyldt med ål! (My hovercraft is full of eels!)</p>
+
+		<a href='/'>Return to the introduction!</a>
+
+		<footnote>
+			<p>Copyright © 2013 Natalie D. Kane</p>
+		</footnote>
+
+		<script src="/js/prism.js"></script>
+
+	</body>
+</html>

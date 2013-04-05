@@ -1,0 +1,117 @@
+<!doctype HTML>
+<html lang="en">
+	<head>
+		<script type="text/javascript" src="//use.typekit.net/auv1kqp.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<title>ND Kane &#8202;—&#8202; Root ems</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/reset.css">
+		<link rel="stylesheet" href="/styles-vertical-rhythm.css">
+		<link rel="stylesheet" href="/prism.css ">
+		<!-- <link rel="stylesheet" href="/styles.css"> -->
+		<meta name='viewport' content='width=device-width'>
+	</head>
+
+	<body>
+
+		<header>
+
+			<h1><a href="/"><img src="/images/page-logo.jpg"></a></h1>
+		
+			<nav>
+				<ul>
+					<li class="current"><a href="/">Content Out</a></li>
+					<li><a href="/art">Art</a></li>
+				</ul>
+			</nav>
+
+		</header>
+
+		<h1>Root ems, and a few notes on webfonts</h1>
+
+		<figure><img src="images/1933-invisible-man-james-whale.jpg" alt="Still from The Invisible man, dir. James Whale"><figcaption>Still from The Invisible Man, 1933, dir. James Whale.</figcaption></figure>
+
+		<h2>Thoughts on Webfonts</h2>
+
+		<p>As you can see, I’ve changed the font on this site from Palatino Linotype. We were very comfortable together at first, however, after noticing many flaws, we decided to call it a day. Palatino Linotype looks lovely and bookish at first, but it has terrible curly quotes, and ultimately didn’t reflect the tone I wanted to convey by writing these posts. I wanted to try something a little more friendly, so I had a look at web fonts.</p>
+
+		<p>I’d already learned how to load in Google webfonts when I created my page to experiment with <a href="/relative-sizing">ems and root ems in the CSS</a>. Loading in a Google webfont is a simple matter of loading in the stylesheet (which is provided by Google webfonts) and assigning the font-family of the elements that I wanted to apply it to. However, as I found out, there are more web fonts in life than just Google web fonts.</p>
+
+		<img src="images/hello-happy-type-example.png">
+
+		<p>Before choosing the current web font, I had a sift through the Google Web fonts directory. I’ve spoken to many web developers and designers who have made it pretty clear that the selection isn’t particularly exciting. I found one rather beautiful site by <a href="https://twitter.com/ubuwaits" title="Chad Mazzola (ubuwaits) on Twitter">Chad Mazzola</a> on <a href="http://hellohappy.org/beautiful-web-type/" title="Beautiful web type &amp;mdash; the best typefaces from the Google web fonts directory">Hello Happy</a> that utilises the best examples and combinations from the Google web font directoy, such as the above example in <a href="http://www.google.com/fonts/specimen/Playfair+Display#pairings" title="Google Web Fonts Playfair Display">Playfair Display.</a></p>
+
+		<p>I eventually landed on <a href="http://www.google.com/fonts/specimen/Galdeano">Galdeano</a> for my headlines and navigation, and <a href="http://www.google.com/fonts/specimen/Gudea">Gudea</a> for all other text. I chose this pairing because I wanted typography that was clear and friendly, which at first I thought this pairing was.</p>
+
+		<figure><img class="diagram" src="images/Galdeano-screenshot.png"><figcaption>An example of the Google Web Font Galdeano</figcaption></figure>
+
+		<figure><img class="diagram" src="images/Gudea-screenshot.png"><figcaption>An example of the Google Web Font Gudea</figcaption></figure>
+
+		<p>Once I’d got over the initial novelty of loading in web fonts, I realised I didn’t really like my choice very much. As Aral pointed out, I’d also managed to choose another font that had terrible curly quotes. This was a point where critique was important, something that Aral has encouraged throughout our lessons.</p> 
+
+		<p>Aral drew my attention to the functional side of web fonts; what they were designed for and how they should be best used. He pointed out that the spaces (tracking) between letters was very large and made the text difficult to read. As the description reads, Gudea was designed for instructions and labels, and therefore the larger tracking helped when the font size was reduced. Galdeano also had flaws, such as the very symettrical dot (tittle) above the ‘i’, which didn’t match the asymmetrical design of the rest of the type. This left me in a bit of a muddle.</p>
+
+		<figure><img src="images/typekit-screenshot.png"><figcaption>An screenshot of the TypeKit UI</figcaption></figure>
+
+		<p>I asked two friends that are particularly ace at typography, <a href="https://twitter.com/alicaurusrex" title="Alice Ralph (alicaurusrex) on Twitter">Alice Ralph</a> and <a href="http://laurakalbag.com" title="Laura Kalbag">Laura Kalbag</a>, for their advice. I was pointed in the direction of TypeKit by Adobe which allows you to create a ‘kit’ of types to load in via a very simple js script. It makes it rather simple to search for fonts that would suit paragraphs and headlines, and it has a rather lovely selection. I’m currently using the free version until I invest in the portfolio, hence the teeny grey badge in the corner.</p>
+
+		<p>The font you see before you is called <a href="https://typekit.com/fonts/adelle-web" title="Adelle | Typekit">Adelle</a>, which I found friendly, readable, and had a great amount of character which is what I originally set out to find. Through Twitter I was recommended <a href="http://beta.typecardsapp.com" title="Type Cards">Typecard</a>, an app that takes you through different elements in typography in a rather delightful way. It also allows you to search for things too! I’d love to learn a lot more about typography, web fonts and design, so if you recommend any articles or books I should read, please <a href="mailto:nataliedenisekane@gmail.com">email me</a>, or say hello on <a href="http://twitter.com/nd_kane" title="Natalie Kane (nd_kane) on Twitter">Twitter</a> or <a href="https://alpha.app.net/nataliekane" title="nataliekane on App.net">App.net</a>!</p> 
+
+		<h2>Root ems</h2>
+
+		<p>As you may have noticed, last week I struggled with ems. Even after I’d got the hang of them, they still weren’t very simple to comprehend. This is where I was introduced to root ems, or rems in short.</p>
+
+		<p>Unlike ems, root ems are always relative to the root element’s font size. Whereas ems inherit their value from the context, the parent element, root ems always equal the same value. So if the <code>html</code> <code>font-size</code> is set at 16px, then a rem will always equal 16px, regardless of the context in which they are used in the <code>html</code>.</p>
+<figure><pre><code class="language-css">html
+{
+	font-size: 10px;
+}
+
+body
+{
+	font-size: 2rem; /* = 20px */
+	margin-left: 1rem; /* = 10px */
+}
+
+p
+{
+	font-size: 4rem; /* = 40px */
+	margin: 8rem; /* = 80px */
+}</code></pre><figcaption>An example of root ems used within the html.</figcaption></figure>
+
+		<p>As demonstrated above, if the <code>html</code> <code>font-size</code> is set at 10px, the value of 1<code>rem</code> equals 10px. If the <code>body</code> sets the <code>font-size</code> at 2<code>rem</code>, the margins set within it are not relative to the parent element, but to the root, and therefore 1<code>rem</code> still remains at 10px. This also applies to any element within the <code>body</code>, such as the <code>p</code> element, which also inherits its value from the root, rather than the parent element, the <code>body</code>.</p>
+
+		<p>In a media query, things change a little. As the value of a <code>rem</code> is still determined by the root&#8202;—&#8202;the <code>html</code>&#8202;—&#8202;any elements set in a media query that change when a breakpoint is breached are still relative to the root. This doesn’t help when you want things to be larger, so you will have to set the root font-size in the html.</p>
+
+		<p>As you can see, this is pretty simple to grasp, however, as values become decimal it becomes quite difficult to visualise things and it still requires a bit of maths. For example, if your base font size is set at 16px, and your margin is set at 24px, you will have to work out what this is in rems by dividing 24px by 16px. This leaves you with 1.5<code>rem</code>. As you can imagine, when values are divided and numbers after the decimal point become longer, it become really hard to visualise your design, as not everyone is a genius with numbers (certainly not me).</p>
+
+		<h2>Pixel-parity root ems</h2>
+
+		<p>Now, root ems are all well and good, however you can’t really visualise root ems easily. However, you can visualise pixels, so Aral introduced me to a new way of thinking about using root ems. Aral has written a really good post on pixel-parity rems over on his blog, which may explain this in a better way than I can!</p>
+
+		<p>Aral’s problems with visualising rems was echoed by Chris Jacob, who suggested a simple solution in his <a href="http://jsbin.com/acide4/8" title="ROOT EM! Using CSS3 "rem" Units for "Elastic Pixels"">Elastic Pixels gist</a>. What if 1rem was equal to 1px? If the base font size is set at 1px, then 1rem will equal 1px. So, rather than dividing values by the root which has a value larger than 1px&#8202;—&#8202;resulting in a lot of ridiculous decimal numbers&#8202;—&#8202;you can set the font size in the html to 1px. This means that to set a <code>margin-left</code> value that equals 500px, as the root font size set in the <code>html</code> is 1px, you only have to set the value as 500rems. This makes design a whole lot easier to visualise, as it’s much easier to imagine in pixels.</p>
+
+		<!--Insert paragraph about media queries -->
+
+		<p>The one problem that both Aral and Chris Jacobs point out is that not all browsers support rems, such as IE8 and Opera Mini. I’ll have to ask Aral in my next solution how I would create a fallback option for this. I’ve already started searching for a good IE8 debug which will make my site look how it should, rather than Frankenstein’s Monster.</p>
+
+		<h2>Homework</h2>
+
+		<ol>
+			<li>Look for, and devour, good articles on typography and Web Design.</li>
+			<li>Research CSS Pre-processors: Stylus and Sass</li>
+			<li>Create my design page, where I’ll fully explain all of the 1930s horror films.</li>
+		</ol>
+
+		<p>Jeg vil holde øje med en masse danske film i denne weekend. Hvis du har nogle anbefalinger, så lad mig det vide!</p>
+
+		<a href='/'>Return to the introduction!</a>
+
+		<footnote>
+			<p>Copyright © 2013 Natalie D. Kane</p>
+		</footnote>
+
+		<script src="/js/prism.js"></script>
+
+	</body>
+</html>
