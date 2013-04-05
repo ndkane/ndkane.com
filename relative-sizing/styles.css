@@ -1,17 +1,22 @@
+html
+{
+	font-size: 1px;
+}
 
 body
 {
-	line-height: 1.5rem; /* 24px/16px */
-	max-width: 46.875rem; /* 750px/16px */
-	margin: 1.5rem 1.5rem;
+	font-size: 16rem;
+	line-height: 24rem;
+	max-width: 750rem;
+	margin: 24rem 24rem;
 	font-family: 'Lato', Helvetica, Arial, sans-serif;
 }
 
 nav
 {
-	padding-bottom: 1.125rem; /* 18px/16px */
+	padding-bottom: 18rem;
 	border-bottom: solid 1px black;
-	margin-bottom: 2.25rem; /* 36px/16px */
+	margin-bottom: 36rem;
 	text-align: center;
 
 }
@@ -30,8 +35,8 @@ nav a
 li
 {
 	display: inline-block;
-	margin-left: 1.125rem; /* 18px/16px */
-	line-height: 1.875rem; /* 30px/16px */
+	margin-left: 18rem;
+	line-height: 30rem;
 }
 
 li:first-child
@@ -52,54 +57,54 @@ li:last-child:after
 img
 {
 	width: 100%;
-	margin: .75rem 0; /* 12px/16px */
+	margin: 12rem 0;
 }
 
 h1
 {
-	font-size: 2.625rem; /* 42px/16px */
-	line-height: 3.75rem; /* 60px/16px */
-	margin-top: 1.5rem; /* 24px/16px */
-	margin-bottom: 1rem; /* 16px/16px */
+	font-size: 42rem;
+	line-height: 60rem;
+	margin-top: 24rem;
+	margin-bottom: 16rem;
 }
 
 h2
 {
-	font-size: 1.875em; /* 30px/16px */
-	line-height: 1.5rem; /* 24px/16px */
-	margin-top: 1.5rem; /* 24px/16px */
-	margin-bottom: 1rem; /* 16px/16px */
+	font-size: 30rem;
+	line-height: 24rem;
+	margin-top: 24rem;
+	margin-bottom: 16rem;
 }
 
 h3
 {
-	font-size: 1.5rem; /* 24px/16px */
-	line-height: 1.5rem; /* 24px/16px */
-	margin-top: 1.5rem; /* 24px/16px */
-	margin-bottom: 1rem; /* 16px/16px */
+	font-size: 24rem;
+	line-height: 24rem;
+	margin-top: 24rem;
+	margin-bottom: 16rem;
 }
 
 p
 {
-	font-size: 1.125rem; /* 18px/16px */
-	line-height: 1.875rem; /* 30px/16px */
+	font-size: 18rem;
+	line-height: 30rem;
 	text-align: justify;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-	margin-bottom: 1rem; /* 16px/16px */
+	margin-bottom: 16rem;
 }
 
 @media all and (min-width: 768px)
 {
 	html
 	{
-		font-size: 24px;
+		font-size: 1.5px;
 	}
 
 	body
 	{
-		max-width: 31.25rem; /* 750px/24px */
+		max-width: 500rem; /* 750px/1.5 */
 		margin-left: auto;
 		margin-right: auto;
 	}
