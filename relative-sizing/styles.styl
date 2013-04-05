@@ -1,5 +1,8 @@
 html
 	font-size 1px
+	
+	@media all and (min-width: 768px)
+		font-size 1.5px
 
 body
  
@@ -8,6 +11,11 @@ body
 	max-width 750rem
 	margin 24rem 24rem
 	font-family 'Lato', Helvetica, Arial, sans-serif
+	
+	@media all and (min-width: 768px)
+		max-width 500rem /* 750px/1.5 */
+		margin-left auto
+		margin-right auto
 
 nav
  
@@ -81,14 +89,6 @@ p
 	hyphens auto
 	margin-bottom 16rem
 
-@media all and (min-width: 768px)
-	
-	html
-	 	font-size 1.5px
 
-	body
-		max-width 500rem /* 750px/1.5 */
-		margin-left auto
-		margin-right auto
 	
 
