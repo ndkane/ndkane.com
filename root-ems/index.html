@@ -99,13 +99,13 @@ p
 
 		<p>With media queries, as each element is relative to the root font-size, you don’t need to have a long list of instructions to your elements for when the design breaks. Instead, you simply have to define the root font size in the <code>html</code>, which overrides the current root font size. This is because all elements will then be relative to this root font size, and scale accordingly.</p>
 
-		<p>As you can see, this is pretty simple to grasp, however, as values become decimal it becomes quite difficult to visualise things and it still requires a bit of maths. For example, if your base font size is set at 16px, and your margin is set at 24px, you will have to work out what this is in rems by dividing 24px by 16px. This leaves you with 1.5<code>rem</code>. As you can imagine, when values are divided and numbers after the decimal point become longer, it become really hard to visualise your design, as not everyone is a genius with numbers (certainly not me).</p>
+		<p>As you can see, this is pretty simple to grasp, however, as values become decimal it becomes quite difficult to visualise things and it still requires a bit of maths. For example, if your base font size is set at 16px, and your margin is set at 24px, you will have to work out what this is in rems by dividing 24px by 16px. This leaves you with 1.5<code>rem</code>. As you can imagine, when values are divided and numbers after the decimal point become longer, it becomes really hard to visualise your design, as not everyone is a genius with numbers (certainly not me).</p>
 
 		<h2>Pixel-parity root ems</h2>
 
-		<p>Now, root ems are all well and good, however you can’t really visualise root ems easily. However, you can visualise pixels, so Aral introduced me to a new way of thinking about using root ems. Aral has written a really good post on pixel-parity rems over on his blog, which may explain this in a better way than I can!</p>
+		<p>Now, root ems are all well and good, however you can’t really visualise root ems easily. However, you can visualise pixels, so Aral introduced me to a new way of thinking about using root ems. Aral has written a really good post on <a href="http://aralbalkan.com/notes/pixel-parity-rems/" title="Aral Balkan&amp;#8202;—&amp;#8202;Pixel‐parity rems">pixel-parity rems</a> over on his blog, which may explain this in a better way than I can!</p>
 
-		<p>Aral’s problems with visualising rems was echoed by Chris Jacob, who suggested a simple solution in his <a href="http://jsbin.com/acide4/8" title="ROOT EM! Using CSS3 "rem" Units for "Elastic Pixels"">Elastic Pixels gist</a>. What if 1rem was equal to 1px? If the base font size is set at 1px, then 1rem will equal 1px. So, rather than dividing values by the root which has a value larger than 1px&#8202;—&#8202;resulting in a lot of ridiculous decimal numbers&#8202;—&#8202;you can set the font size in the html to 1px. This means that to set a <code>margin-left</code> value that equals 500px, as the root font size set in the <code>html</code> is 1px, you only have to set the value as 500rems. This makes design a whole lot easier to visualise, as it’s much easier to imagine in pixels.</p>
+		<p>Chris Jacob suggested a simple solution in his <a href="http://jsbin.com/acide4/8" title="ROOT EM! Using CSS3 "rem" Units for "Elastic Pixels"">Elastic Pixels gist</a>. Aral then takes it further. What if 1rem was equal to 1px? If the base font size is set at 1px, then 1rem will equal 1px. So, rather than dividing values by the root which has a value larger than 1px&#8202;—&#8202;resulting in a lot of ridiculous decimal numbers&#8202;—&#8202;you can set the font size in the html to 1px. This means that to set a <code>margin-left</code> value that equals 500px, as the root font size set in the <code>html</code> is 1px, you only have to set the value as 500rems. This makes design a whole lot easier to visualise, as it’s much easier to imagine in pixels.</p>
 
 <pre><code class="language-css">@media all and (min-width: 768px)
 {
@@ -126,11 +126,11 @@ p
 		<p>As demonstrated above, A root font size has to be set in a media query. This is because I have set a larger root font size for when the design breaks. In the above example, I 
 		As 16px is equal to 1 rem, in order to gain a root font size of 1.5rem, you will have to multiply 16 by 1.5. So, in order to set a root font size of 24px when your design breaks, you will have to set the root font size to 1.5rem. You’ll also notice that I have had to change the max width of the <code>body</code>&#8202;—&#8202;as the root font size has changed, I have to do a little bit of math to determine what my max width would be in rems, if the root font size was 1.5px instead of 1px.</p>
 
-		<p>The one problem that both Aral and Chris Jacobs point out is that not all browsers support rems, such as IE8 and Opera Mini. I’ll have to ask Aral in my next solution how I would create a fallback option for this. I’ve already started searching for a good IE8 debug which will make my site look how it should, rather than Frankenstein’s Monster.</p>
+		<p>The one problem that both Aral and Chris Jacobs point out is that not all browsers support rems, such as IE8 and Opera Mini. I’ll have to ask Aral in my next solution how I would create a fallback option for this.</p>
 
 		<img src="images/Accessibility-font-limit.png">
 
-		<p>There is also a problem with Accessibility, as shown above. When you go into Safari Preferences, under the ‘Advanced’ tab there is an option to stop the display of fonts with a size less than 9px. This means that this option goes to each element and checks the root font size, or font-size. If the value is set less than 9px, then it sets the font size of every element (including the <code>html</code>, the root font size) at 9px, causing everything to scale accordingly. With a root font size set at 1px, you can see why this would be a problem. However, we will address this next week!</p>
+		<p>There is also a problem with Accessibility, as shown above. When you go into Safari Preferences, under the ‘Advanced’ tab there is an option to stop the display of fonts with a size less than 9px. This means that this option goes to each element and checks the font-size. If the value is set less than 9px, then it sets the font size of every element (including the <code>html</code>, the root font size) at 9px, causing everything to scale accordingly. With a root font size set at 1px, you can see why this would be a problem. Aral has stressed that setting the root font-size to 1px is not the way to make your site easily to visualise and responsive. However, it is one interation on our way to pixel parity rems which we will address this next week!</p>
 
 		<h2>Homework</h2>
 
@@ -142,13 +142,12 @@ p
 
 		<p>Jeg vil holde øje med en masse danske film i denne weekend. Hvis du har nogle anbefalinger, så lad mig det vide!</p>
 
-		<a href='/'>Return to the introduction!</a>
+		<p><a href="/">Return to the introduction.</a></p>
 
 		<footnote>
 			<p>Copyright © 2013 Natalie D. Kane</p>
 		</footnote>
 
 		<script src="/js/prism.js"></script>
-
 	</body>
 </html>
