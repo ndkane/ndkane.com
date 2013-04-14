@@ -89,7 +89,7 @@ body
 
 	<p>Stylus understands you without all of those curly brackets, but you will need to include colons on pseudoclasses, as they are very important there (I made this mistake and severely broke my design). They pre-process your CSS, which is very handy when you want to solve the problem we encounterd earlier.</p>
 
-	<p>Here’s the perfect time to revisit Aral’s post on <a href="http://aralbalkan.com/notes/pixel-parity-rems/" title="Aral Balkan&amp;#8202;—&amp;#8202;Pixel‐parity rems">Pixel-parity rems</a>. As Aral demonstrates, using CSS Pre-processors and mixins (where you can embed all the properties of a class into another class by including the class name as one of its properties) you can:</p>
+	<p>This is the perfect time to revisit Aral’s post on <a href="http://aralbalkan.com/notes/pixel-parity-rems/" title="Aral Balkan&amp;#8202;—&amp;#8202;Pixel‐parity rems">Pixel-parity rems</a>. As Aral demonstrates, using CSS Pre-processors and mixins (where you can embed all the properties of a class into another class by including the class name as one of its properties) you can:</p>
 
 	<ol>
 		<li>Use relative units,</li>
@@ -116,6 +116,23 @@ body
   line-height: 24px;
   line-height: 1.5rem;
 }</code></pre>
+
+	<p>So, as you can see, the <code>line-height</code> has been set in rems, keeping the units relative, and we have provided a fallback for older browsers in pixels. This solves the problems that arose earlier when we attempted to make our design easy to visualise by setting the root font size to 1px. Instead of setting the root font size at 1px, we can set it how we would like it to be, in the above examples, our root font size was set at 24px. By setting rules using a CSS Pre-processor such as Stylus, we can design within the Stylus (.styl) file in a way that is easily visual, all while ensuring our units are relative.</p>
+
+	<p>There’s a lot more to be done with CSS Pre-processors which we’ll explore next week, as the mixin provided isn’t necessarily a blanket rule for all…</p>
+
+	<h2>Homework</h2>
+
+	<ol>
+		<li>Make a list of the sites I like. I’ve encountered quite a few that have started to inspire me in my own design, so I’d like to share them with you.</li>
+		<li>Provide a colophon about this site, explaining the design a little further.</li>
+	</ol>
+
+	<p>As you may already know, Aral is an excellent and experienced speaker, and is pretty good at giving talks. In June he’s running a one-day masterclass on presenting called <a href="http://slideandstage.com" title="Slide and Stage: a one day workshop on presenting by Aral Balkan.">Slide and Stage</a>. I thoroughly recommend you put this in your diary.</p>
+
+	<p>Denne weekend, Jeg har været syg. Så har Jeg været at se en masse danske filmer. Denne eftermiddag Jeg vil se 'Klown' af Mikkel Nørgaard med min to katte, da de er en god kur.</p>
+
+	<p>Natalie</p>
 
 		<p><a href="/">Return to the introduction.</a></p>
 
