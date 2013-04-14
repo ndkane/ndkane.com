@@ -86,6 +86,11 @@ img.ios-screenshots
 	border: solid 1px black;
 }
 
+img.screenshots
+{
+	border: solid 1px lightgrey;
+}
+
 
 h1
 {
