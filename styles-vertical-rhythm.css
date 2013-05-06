@@ -143,6 +143,12 @@ p.smaller
 	font-size: smaller;
 }
 
+p.colophon
+
+{
+	text-align: center;
+}
+
 /* Specific styles */
 
 ol.alphabetical-list
@@ -261,6 +267,11 @@ figure
 	margin-top: 0px;
 	text-align: center;
 
+}
+
+figure.centre
+{
+	display: block;
 }
 
 figure img

@@ -50,7 +50,7 @@
 
  		<img class="screenshots" src="images/ouch-accessibility.png" alt="Broken Design by setting Accessibility limits">
 
- 		<p>So, setting the root font size to 1px doesn’t work, as the above happens. It’s really very important that your site is accessible, 
+ 		<p>So, setting the root font size to 1px doesn’t work, as the above happens. It’s really very important that your site is accessible, so you have to accomodate for accessibility options.</p>
 
  		<p>Now, as we’ve discovered, you can’t use CSS to fix this problem. We also can’t set the root font size to 1px in order for the design to be simple to visualise. However, we’d still like to apply it so that pixels equate to whatever unit we use, in this case, rem, e.g. 16px = 16rem, 500px = 500 rem. We would like our pixels to act like rems.</p>
 
@@ -97,7 +97,7 @@ body
 		<li>Automatically implement pixel fallbacks for older browsers.</li>
 	</ol>
 
-	<p>This solves all the problems there are when 
+	<p>This solves all the problems that we encountered when wanting to make a responsive, yet accessible site.</p>
 
 	<p>We’ve only just started looking at mixins, however, Aral showed me a simple example that demonstrates how to set an instruction that takes my values set in rems in the Stytlus file, divides them by 16, and provides a pixel fallback all within the CSS:</p>
 
