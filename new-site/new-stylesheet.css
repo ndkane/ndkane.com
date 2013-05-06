@@ -1,6 +1,6 @@
 body
 {
-	font-family: adelle, Georgia, serif;
+	font-family: 'Merriweather Sans', adelle, Georgia, serif;
 	line-height: 24px;
 	max-width: 600px;
 	margin-left: 1.5rem;
@@ -15,7 +15,11 @@ img.header-image
 
 nav
 {
+	border-top: dashed 1px #55ACE6;
+	border-bottom: dashed 1px #55ACE6;
 	margin-bottom: 1.5rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
 }
 
 ul
@@ -26,12 +30,14 @@ ul
 li
 {
 	display: inline;
-	margin-left: 0.6rem;
-	margin-right: 0.6rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 h1
 {
+	font-family: 'Lato', adelle, Georgia, serif;
+	font-weight: 700;
 	font-size: 2.5rem;
 	text-align: center;
 	margin-top: 1rem;
@@ -40,15 +46,19 @@ h1
 
 p
 {
+	text-align: justify;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 p.colophon
 {
-	border-top: solid 1px black;
+	border-top: dashed 1px #55ACE6;
 	text-align: center;
 	padding-top: 1rem;
 }
@@ -56,9 +66,74 @@ p.colophon
 a
 {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover.home
+{
+	color: #B50000;
+}
+
+a:hover.about
+{
+	color: orange;
+}
+
+a:hover.blog
+{
+	color: #0A69A8;
+}
+
+a:hover.essays
+{
+	color: #BD0D91;
+}
+
+a:hover.portfolio
+{
+	color: #1D6B00;
 }
 
 a.red
 {
 	color: #B50000;
+}
+
+a.blue
+{
+	color: #0A69A8;
+}
+
+
+@media all and (min-width: 650px)
+{
+
+	body
+	{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	h1
+	{
+		font-size: 3rem;
+		margin-top: 2.5rem;
+		margin-bottom: 2.5rem;
+	}
+
+	li
+	{
+	font-size: 1.25rem;
+	display: inline;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	}
+
+	p{
+		font-size: 1.25rem;
+		line-height: 2rem;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+
 }
