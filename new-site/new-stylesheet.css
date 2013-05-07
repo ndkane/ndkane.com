@@ -6,6 +6,7 @@ body
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
 	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 	background-color: #E8E4D3;
 }
 
@@ -37,13 +38,16 @@ nav ul
 nav li
 {
 	display: inline;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin-left: 0.4rem;
+	margin-right: 0.4rem;
 }
 
 li
 {
+	line-height: 2rem;
 	margin-left: 2rem;
+	margin-bottom: 0.75rem;
+	margin-top: 0.75rem;
 	list-style-type: circle;
 
 }
@@ -111,6 +115,17 @@ a.blue
 	{
 		margin-right: auto;
 		margin-left: auto;
+
+	}
+
+	header img
+	{
+
+	}
+
+	h1 header
+	{
+		float: left;
 	}
 
 	h1
@@ -120,41 +135,12 @@ a.blue
 		margin-bottom: 2.5rem;
 	}
 
-	nav ul
-	{
-	text-align: center;
-	}
-
 	nav li
 	{
-	display: inline;
-	margin-left: 1.5rem;
-	margin-right: 1.5rem;
-	}
-
-	li
-	{
-	font-size: 1.25rem;
-	margin-left: 2rem;
-	list-style-type: circle;
-	}
-
-	p{
 		font-size: 1.25rem;
-		line-height: 2rem;
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-left: 1.7rem;
+		margin-right: 1.7rem;
 	}
-
-/*	div.intro-column
-	{
-		float: left;
-	}
-
-	div.blog-column
-	{
-		float: right;
-	}*/
 
 }
 
