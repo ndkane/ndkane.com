@@ -239,5 +239,9 @@ span
 
 @media all and (max-width: 330)
 {
-
+	p
+	{
+		font-size: 1rem;
+		line-height: 1.5rem;
+	}
 }
