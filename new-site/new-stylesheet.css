@@ -1,7 +1,8 @@
 body
 {
-	font-family: 'Merriweather Sans', adelle, Georgia, serif;
-	line-height: 24px;
+	font-family: 'Lora', adelle, Georgia, serif;
+/*	font-size: 24px;*/
+	line-height: 1.5rem;
 	max-width: 600px;
 	margin-left: 1.5rem;
 	margin-right: 1.5rem;
@@ -12,7 +13,10 @@ body
 
 img.header-image
 {
-	width: 25%;
+	width: 20%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 nav
@@ -54,13 +58,18 @@ li
 
 h1
 {
-	font-family: 'Lato', adelle, Georgia, serif;
 	font-weight: 700;
+	font-style: italic;
 	line-height: 3rem;
-	font-size: 2.35rem;
+	font-size: 2rem;
 	text-align: center;
-	margin-top: 0.5rem;
-	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+h2
+{
+	font-weight: 800;
 }
 
 p
@@ -69,28 +78,56 @@ p
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
-	font-size: 1rem;
-	line-height: 1.5rem;
+	font-size: 1.225rem;
+	line-height: 2rem;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 }
 
 p.colophon
 {
+	font-size: 1rem;
 	border-top: dashed 1px #55ACE6;
 	text-align: center;
 	padding-top: 1rem;
 }
 
-p.underline
+p.column-top-left
 {
-	text-decoration: underline;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	border: dashed 1px #55ACE6;
+	padding: 1rem;
+}
+
+p.column-top-right
+{
+	font-size: 1rem;
+	line-height: 1.5rem;
+	border: dashed 1px #55ACE6;
+	padding: 1rem;
 }
 
 a
 {
-	text-decoration: none;
+	text-decoration: underline;
 	color: black;
+}
+
+p a 
+{
+	color: #B50000;
+}
+
+a.current
+{
+	border-bottom: solid 1px #B50000;
+	color: #B50000;
+}
+
+nav a
+{
+	text-decoration: none;
 }
 
 li a:hover
@@ -108,38 +145,94 @@ a.blue
 	color: #0A69A8;
 }
 
+span
+{
+	font-weight: 800;
+}
+
+
+
 @media all and (min-width: 650px)
 {
 
 	body
 	{
-		margin-right: auto;
+		max-width: 850px;
 		margin-left: auto;
-
+		margin-right: auto;
+		padding-left: 3rem;
+		padding-right: 3rem;
 	}
 
-	header img
+	img.header-image
 	{
-
+		width: 40px;
 	}
 
-	h1 header
-	{
-		float: left;
-	}
 
 	h1
 	{
-		font-size: 3rem;
-		margin-top: 2.5rem;
-		margin-bottom: 2.5rem;
+		font-size: 2rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	nav
+	{
+		margin-top: 1.5rem;
+		margin-bottom: 1.5rem;
 	}
 
 	nav li
 	{
-		font-size: 1.25rem;
 		margin-left: 1.7rem;
 		margin-right: 1.7rem;
+
+	}
+
+	li
+	{
+		font-size: 1rem;
+	}
+
+	p.main-text
+	{
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		margin-top: 1.5rem;
+		padding-bottom: 1rem;
+		border-bottom: dashed 1px #55ACE6;
+		margin-bottom: 0.5rem;
+	}
+
+	p.column-top-left
+	{
+		float: left;
+		max-width: 47%;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		margin-top: 0.5rem;
+		position: inherit;
+		border: none;
+		padding: 0;
+	}
+
+	p.column-top-right
+	{
+		float: right;
+		max-width: 47%;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		margin-top: 0.5rem;
+		position: inherit;
+		border: none;
+		padding: 0;
+	}
+
+
+	footer
+	{
+		clear: both;
 	}
 
 }
