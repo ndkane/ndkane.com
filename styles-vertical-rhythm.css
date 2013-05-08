@@ -149,6 +149,12 @@ p.colophon
 	text-align: center;
 }
 
+p.introductory-paragraph
+{
+	border-bottom: solid 1px grey;
+	padding-bottom: 36px;
+}
+
 /* Specific styles */
 
 ol.alphabetical-list
