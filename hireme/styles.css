@@ -1,0 +1,944 @@
+body
+{
+	font-size: 24px;
+	max-width: 100%;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, div
+{
+	display: block;
+}
+
+a
+{
+	text-decoration: none;
+	color: #E01B5D;
+}
+
+p
+{
+	font-family: 'Lato', Helvetica, sans serif;
+	font-weight: 300;
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+figcaption
+{
+	font-family: 'Lato', Helvetica, sans serif;
+	font-size: 1rem;
+}
+
+h1
+{
+	font-family: 'Oswald', Helvetica, sans serif;
+	font-size: 2rem;
+}
+
+h3
+{
+	font-family: 'Oswald', Helvetica, sans serif;
+	font-size: 4rem;
+	color: #A3A3A3;
+}
+
+.slide#intro
+{
+	background: #3B3B3B;
+	padding: 3rem 0 3rem 0;
+}
+
+.slide#intro .text
+{
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.slide#intro h1
+{
+	font-size: 2.5rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	color: white;
+}
+
+.slide#intro h2
+{
+	font-size: 3.5rem;
+	font-family: 'Oswald', sans serif;
+	color: #5C5C5C;
+}
+
+.slide#intro h3
+{
+	font-size: 2rem;
+
+}
+
+.slide#intro p
+{
+	font-size: 2rem;
+	color: white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.slide#why-me
+{
+	padding: 0.5rem 0 5rem 0;
+	width: 100%;
+	background-image: url(images/MenkmanCollapseOfPAL.png);
+}
+
+.slide#why-me .text 
+{
+	color: white;
+	font-weight: 300;
+	margin-right: 1rem;
+}
+
+.slide#why-me h1
+{
+	margin: 2rem;
+	font-size: 1.5rem;
+}
+
+.slide#why-me p
+{
+	font-size: 1.25rem;
+	line-height: 1.75rem;
+}
+
+.caption
+{
+	float: right;
+	margin-top: 0rem;
+	margin-right: 1rem;
+	margin-left: 2rem;
+	color: white;
+	margin-bottom: 1rem;
+}
+
+.caption#slide-large
+{
+	margin-top: 2rem;
+	color: black;
+}
+
+.caption#slide3
+{
+	margin-top: 0rem;
+	color: black;
+}
+
+.caption#slide4
+{
+	margin-top: 3.5rem;
+}
+
+.caption#slide5
+{
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	color: black;
+}
+
+.caption#slide6
+{
+	clear: both;
+	margin-left: 2rem;
+	color: black;
+}
+
+.caption-left
+{
+	float: left;
+	margin-top: 7rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+
+.caption-left#large-slide
+{
+	margin-top: 3.5rem;
+}
+
+.slide#digital-culture
+{
+	padding: 1.5rem 0 7rem 0;
+	background-image: url(images/trevor-paglen.jpg)
+}
+
+.slide#digital-culture .text
+{
+	margin: 1rem;
+	text-align: right;
+}
+
+.slide#digital-culture h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#digital-culture p
+{
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.slide#about-me
+{
+	padding: 1rem 0 1rem;
+	background: #3B3B3B;
+}
+
+.slide#about-me .text
+{
+	color: white;
+	margin: 0rem;
+	margin-right: 1rem;
+	font-weight: 300;
+}
+
+.slide#about-me .text p
+{
+	text-align: left;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.slide#about-me .text h1
+{
+	margin: 2rem;
+	font-size: 1.5rem;
+}
+
+.slide#institutions
+{
+	padding: 2rem 0 2rem 0;
+	background-color: #78AAC4;
+}
+
+.slide#institutions .text
+{
+	margin: 1rem;
+}
+
+.slide#institutions h1
+{
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+}
+
+.slide#institutions p
+{
+	font-weight: 400;
+	margin-left: 1rem;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.slide#institutions img 
+{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.slide#blank-slate 
+{
+	padding: 4rem 0 8.5rem 0;
+	background-image: url(images/tzu-ting-wan.jpg)
+}
+
+.slide#blank-slate h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	font-size: 1.5rem;
+}
+
+.slide#blank-slate .text
+{
+	margin: 0rem;
+	margin-right: 1rem;
+}
+
+.slide#blank-slate p
+{
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.slide#blank-slate-2
+{
+	padding: 2rem 0 5rem 0;
+	background-image: url(images/isitwouldit2.jpg)
+}
+
+.slide#blank-slate-2 .text
+{
+	margin: 0rem;
+	margin-right: 1rem;
+}
+
+.slide#blank-slate-2 p
+{
+	font-weight: 400;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+.slide#nacro
+{
+	padding: 1rem 0 9rem 0;
+	background-image: url(images/george-barber1.jpg);
+}
+
+.slide#nacro .text
+{
+	margin: 0rem;
+	margin-top: 4rem;
+	margin-right: 1rem;
+}
+ .slide#nacro h1
+ {
+ 	margin-left: 2rem;
+ 	margin-bottom: 2rem;
+ 	font-size: 1.5rem;
+ }
+
+ .slide#nacro p
+ {
+ 	font-weight: 400;
+ 	font-size: 1.25rem;
+ 	line-height: 1.5rem;
+ }
+
+ .slide#web-design
+ {
+ 	padding: 3rem 0 6rem 0;
+ 	background-image: url(images/carsten-nicolai-particle-noise.jpg);
+ }
+
+ .slide#web-design .text
+ {
+ 	margin-top: 0rem;
+ 	margin-right: 1rem;
+
+ }
+
+ .slide#web-design h1
+ {
+ 	margin-left: 2rem;
+ 	margin-bottom: 2rem;
+ 	margin-top: 2rem;
+ 	font-size: 1.5rem;
+ }
+
+ .slide#web-design	p
+ {
+ 	font-weight: 400;
+ 	font-size: 1.25rem;
+ 	line-height: 1.5rem;
+ }
+
+.slide#hire-me1
+
+{
+	padding: 2rem 0 2rem 0;
+	background-color: #3B3B3B
+}
+
+.slide#hire-me1 h1
+{
+	margin-left: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.slide#hire-me1 p
+{
+	font-family: 'Oswald',Helvetica, sans serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-right: 1rem;
+	color: #A3A3A3;
+}
+
+.slide#hire-me2
+
+{
+	padding: 2rem 0 2rem 0;
+	background-color: #A3A3A3
+}
+
+.slide#hire-me2 p
+{
+	font-family: 'Oswald',Helvetica, sans serif;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	margin-right: 1rem;
+	color: #3B3B3B;
+}
+
+@media all and (min-width: 685px)
+{
+
+.slide#intro h1
+{
+	font-size: 2rem;
+}
+
+.slide#intro h2
+{
+	font-size: 4.15rem;
+}
+
+.slide#intro h3
+{
+	font-size: 2.5rem;
+
+}
+
+.slide#intro p
+{
+	font-size: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.slide#why-me
+{
+	padding: 0.5rem 0 1.5rem 0;
+}
+
+.slide#why-me .text 
+{
+	margin-right: 1rem;
+}
+
+.slide#why-me h1
+{
+	margin: 2rem;
+}
+
+.caption
+{
+	font-size: 1rem;
+}
+
+.caption#slide-large
+{
+	margin-top: 6rem;
+}
+
+.caption#slide3
+{
+	margin-top: -1rem;
+}
+
+.caption#slide4
+{
+	margin-top: 5.5rem;
+}
+
+.caption#slide5
+{
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.caption#slide6
+{
+	clear: both;
+	margin-top: 0rem;
+	margin-right: 2rem;
+	margin-left: 0rem;
+}
+
+.caption-left
+{
+	float: left;
+	margin-top: 7rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+
+.caption-left#large-slide
+{
+	margin-top: 3.5rem;
+}
+
+.slide#digital-culture
+{
+	padding: 1.5rem 0 7rem 0;
+}
+
+.slide#digital-culture .text
+{
+	margin-left: 3rem;
+	margin-right: 2rem;
+}
+
+.slide#digital-culture h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+}
+
+.slide#about-me
+{
+	padding: 1rem 0 1rem;
+}
+
+.slide#about-me .text
+{
+	margin: 1rem;
+}
+
+.slide#about-me .text h1
+{
+	margin: 2rem;
+}
+
+.slide#institutions
+{
+	padding: 2rem 0 2rem 0;
+}
+
+.slide#institutions .text
+{
+	margin: 1rem;
+}
+
+.slide#institutions h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+}
+
+.slide#institutions img 
+{
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slide#blank-slate 
+{
+	padding: 4rem 0 8.5rem 0;
+}
+
+.slide#blank-slate h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+}
+
+.slide#blank-slate .text
+{
+	margin: 1rem;
+}
+
+.slide#blank-slate-2
+{
+	padding: 2rem 0 1rem 0;
+	background-image: url(images/isitwouldit2.jpg)
+}
+
+.slide#blank-slate-2 .text
+{
+	margin: 1rem;
+}
+
+.slide#nacro
+{
+	padding: 1rem 0 9rem 0;
+}
+
+.slide#nacro .text
+{
+	margin: 1rem;
+	margin-top: 4rem;
+}
+ .slide#nacro h1
+ {
+ 	margin-left: 2rem;
+ 	margin-bottom: 2rem;
+ }
+
+ .slide#web-design
+ {
+ 	padding: 3rem 0 5rem 0;
+}
+
+ .slide#web-design .text
+ {
+ 	margin-top: 0rem;
+ 	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	width: 42rem;
+
+ }
+
+ .slide#web-design h1
+ {
+ 	margin-left: 2rem;
+ 	margin-bottom: 2rem;
+ 	margin-top: 2rem;
+ }
+
+.slide#hire-me1
+{
+	padding: 2rem 0 2rem 0;
+}
+
+.slide#hire-me1 h1
+{
+	margin-left: 3rem;
+	margin-top: 2rem;
+	font-size: 2rem;
+}
+
+.slide#hire-me1 p
+{
+	font-size: 2rem;
+	line-height: 3rem;
+	margin: 2rem 3rem;
+}
+
+.slide#hire-me2
+
+{
+	padding: 2rem 0 2rem 0;
+}
+
+.slide#hire-me2 p
+{
+	font-size: 2rem;
+	line-height: 3rem;
+	margin: 2rem 3rem;
+}
+}
+
+@media all and (min-width: 1010px)
+{
+
+	.slide#intro
+	{
+		padding: 11rem 0 15rem 0; 
+	}
+
+.slide#intro h1
+{
+	font-size: 4.25rem;
+}
+
+.slide#intro h2
+{
+	font-size: 10.15rem;
+}
+
+.slide#intro h3 
+{
+font-size: 4.5rem;
+}
+
+.slide#intro p
+{
+	font-size: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.slide#why-me
+{
+	padding: 0.5rem 0 1.5rem 0;
+}
+
+.slide#why-me .text 
+{
+	margin-right: 40rem;
+}
+
+.slide#why-me h1
+{
+	margin: 2rem;
+	font-size: 2rem;
+}
+
+.slide#why-me p
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#digital-culture
+{
+	padding: 1.5rem 0 7rem 0;
+}
+
+.slide#digital-culture .text
+{
+	margin-left: 35rem;
+	margin-right: 2rem;
+}
+
+.slide#digital-culture h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+.slide#digital-culture p
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#about-me
+{
+	padding: 1rem 0 1rem 0;
+}
+
+.slide#about-me .text
+{
+	margin: 7rem 10rem;
+}
+
+.slide#about-me .text h1
+{
+	margin: 2rem;
+	font-size: 2rem;
+}
+
+.slide#about-me .text p
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#institutions
+{
+	padding: 2rem 0 6rem 0;
+}
+
+.slide#institutions .text
+{
+	width: 50rem;
+}
+
+.slide#institutions h1
+{
+	margin-left: 1rem;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+.slide#institutions p
+{
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#institutions img 
+{
+	float: right;
+	width: 36%;
+	margin-top: -35rem;
+}
+
+.slide#blank-slate 
+{
+	padding: 4rem 0 9.5rem 0;
+}
+
+.slide#blank-slate h1
+{
+	margin-left: 2rem;
+	margin-bottom: 2rem;
+	font-size: 2rem;
+}
+
+.slide#blank-slate p
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#blank-slate .text
+{
+	width: 60rem;
+}
+
+.slide#blank-slate-2
+{
+	padding: 2rem 0 1rem 0;
+	background-image: url(images/isitwouldit.jpg)
+}
+
+.slide#blank-slate-2 .text
+{
+	width: 40rem;
+	margin-left: 40rem;
+}
+
+
+.slide#blank-slate-2 p
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+.slide#nacro
+{
+	padding: 1rem 0 9rem 0;
+}
+
+.slide#nacro .text
+{
+	margin-top: 10rem;
+	margin-left: 16rem;
+	margin-right: 16rem;
+}
+ .slide#nacro h1
+ {
+ 	margin-left: 2rem;
+ 	margin-bottom: 2rem;
+ 	font-size: 2rem;
+ }
+
+.slide#nacro p
+{
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+
+ .slide#web-design
+ {
+ 	padding: 3rem 0 5rem 0;
+ }
+
+ .slide#web-design .text
+ {
+ 	margin-top: 0rem;
+ 	width: 42rem;
+
+ }
+
+ .slide#web-design h1
+ {
+ 	margin-left: 2rem;
+ 	margin-bottom: 2rem;
+ 	margin-top: 2rem;
+ 	font-size: 2rem;
+ }
+
+  .slide#web-design p
+  {
+  	font-size: 1.5rem;
+  	line-height: 2rem;
+  }
+
+
+
+.slide#hire-me1
+{
+	padding: 2rem 0 4rem 0;
+}
+
+.slide#hire-me1 h1
+{
+	margin-left: 3rem;
+	margin-top: 2rem;
+	font-size: 3rem;
+}
+
+.slide#hire-me1 p
+{
+	font-size: 3rem;
+	line-height: 4rem;
+	margin: 2rem 3rem;
+}
+
+.slide#hire-me2
+
+{
+	padding: 2rem 0 4rem 0;
+}
+
+.slide#hire-me2 p
+{
+	font-size: 3rem;
+	line-height: 4rem;
+	margin: 2rem 3rem;
+}
+
+.caption#slide-large
+{
+	margin-top: 6rem;
+}
+
+.caption#slide3
+{
+	margin-top: -1rem;
+}
+
+.caption#slide4
+{
+	margin-top: 5.5rem;
+}
+
+.caption#slide5
+{
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.caption#slide6
+{
+	clear: both;
+	float: left;
+	margin-top: 3rem;
+	margin-left: 10rem;
+}
+
+.caption#slide6 p
+{
+	font-size: 1rem;
+}
+
+.caption-left
+{
+	float: left;
+	margin-top: 7rem;
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+
+.caption-left#large-slide
+{
+	margin-top: 3.5rem;
+}
+
+}
